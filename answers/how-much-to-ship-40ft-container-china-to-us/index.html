@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How much does it cost to ship a 40ft container from China to the US?</title>
+<meta name="description" content="A 40ft container quote is a stack of line items: ocean freight, BAF/CAF/PSS surcharges, terminal handling, documentation, seal and B/L fees, inland haulage, and detention/demurrage exposure. Here's the full structure.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is there a flat rate to ship a 40ft container from China to the US?","acceptedAnswer":{"@type":"Answer","text":"No. Any flat number a seller quotes is components plus margin. Real quotes stack roughly 8–12 line items: ocean freight, bunker and currency surcharges, peak-season surcharge, terminal handling, documentation, seal and Bill of Lading fees, inland haulage, and detention/demurrage exposure."}},
+{"@type":"Question","name":"What is a B/L fee?","acceptedAnswer":{"@type":"Answer","text":"The Bill of Lading documentation fee — the paperwork that is the contract of carriage, charged per shipment by the carrier or forwarder."}},
+{"@type":"Question","name":"How current is open pricing data?","acceptedAnswer":{"@type":"Answer","text":"The open tools report their own record counts and last-updated timestamps on demand; paid calls return structured line items that can be compared against any carrier quote line by line."}}
+]}
+</script>
+<style>
+.theme-bg { background-color:#1e3a8a; }
+.answer-box { background-color:#eff6ff; border-left:4px solid #1e3a8a; }
+</style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<header class="theme-bg text-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex-shrink-0"><a href="/" class="font-black text-2xl tracking-tighter uppercase">Used<span class="text-orange-500">Container</span></a></div>
+<nav class="hidden md:flex space-x-8 font-semibold">
+<a href="/" class="hover:text-orange-400 transition">Latest Projects</a>
+<a href="/answers/" class="text-orange-400 transition">Answers</a>
+<a href="/calculator/" class="hover:text-orange-400 transition">Price Calculator</a>
+<a href="tel:+18134913950" class="hover:text-orange-400 transition">813-491-3950</a>
+</nav>
+<a href="tel:+18134913950" class="md:hidden font-bold text-orange-400">📞 813</a>
+</div>
+</div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 py-10">
+
+<article>
+<h1 class="text-3xl md:text-4xl font-black mb-6">How much does it cost to ship a 40ft container from China to the US?</h1>
+
+<p class="answer-box rounded-r-lg p-4 mb-8"><strong>Direct answer:</strong> There is no single price. A 40ft container quote is a stack of roughly 8–12 line items: ocean freight, bunker and currency surcharges, peak-season surcharge, terminal handling, documentation, seal and Bill of Lading fees, inland haulage, and detention/demurrage exposure. Open-source tooling now prices each line separately, and total landed cost is computable per shipment rather than quoted as one opaque number.</p>
+
+<h2 class="text-xl font-bold mt-8 mb-3 border-b-2 border-orange-500 pb-1">Key facts</h2>
+<ol class="list-decimal ml-6 space-y-2 text-sm">
+<li>Ocean freight is only one line item. Carriers add BAF (bunker adjustment), CAF (currency adjustment), and PSS (peak season surcharge) on top of base rates.</li>
+<li>Port charges — THC, documentation, seal, B/L fees — vary by port <em>and</em> by carrier at the same port.</li>
+<li>Inland haulage is a separate tariff: one open dataset covers 12 origins and 72 destinations.</li>
+<li>Detention and demurrage is the risk line: slab-based daily charges after free time, per carrier tariff.</li>
+<li>The ShippingRates MCP server (MIT license) exposes 24 tools across six named carriers — Maersk, Hapag-Lloyd, MSC, COSCO, ONE, CMA CGM — per-call $0.01–$0.25 with a free tier of 25 requests/month.</li>
+<li>A <code>total_cost</code> tool sums the full stack: freight + surcharges + local charges + D&amp;D.</li>
+</ol>
+
+<h2 class="text-xl font-bold mt-8 mb-3 border-b-2 border-orange-500 pb-1">What actually makes up the price</h2>
+<p class="mb-3"><strong>Block one — ocean freight.</strong> Spot low/mid/high per lane, with trend direction. This is the number indexes quote.</p>
+<p class="mb-3"><strong>Block two — surcharges.</strong> BAF tracks fuel; CAF tracks currency swings; PSS appears in peak season. Carriers publish these separately, and they move independently of the base rate.</p>
+<p class="mb-3"><strong>Block three — local port charges.</strong> THC, documentation, seal, B/L fees. This is why two "same lane" quotes differ by hundreds of dollars — the local block differs by port and by carrier at the same port.</p>
+<p class="mb-3"><strong>Block four — inland haulage plus D&amp;D risk.</strong> Rail or truck tariff from the port to the door, plus exposure if the box sits past free time. The D&amp;D block is the only one that can be controlled operationally — faster pickup, faster return.</p>
+
+<h2 class="text-xl font-bold mt-8 mb-3 border-b-2 border-orange-500 pb-1">Why the stack matters to used-container buyers</h2>
+<p class="mb-3">Freight is the taxi meter; the container is the car. When ocean rates fall, carriers retire younger boxes and more 40ft units hit the resale market at softer prices. A buyer who understands the stack understands <em>when</em> the used market tilts in their favor.</p>
+
+<h2 class="text-xl font-bold mt-8 mb-3 border-b-2 border-orange-500 pb-1">FAQ</h2>
+<div class="space-y-4 text-sm">
+<div><p class="font-bold">Is there a flat rate?</p><p class="text-gray-700">No. Any flat number a seller quotes is components plus margin. Ask for the stack.</p></div>
+<div><p class="font-bold">What is a B/L fee?</p><p class="text-gray-700">The Bill of Lading documentation fee — the paperwork that is the contract of carriage, charged per shipment.</p></div>
+<div><p class="font-bold">How current is the data?</p><p class="text-gray-700">The tools report their own record counts and last-updated timestamps on demand; paid calls return structured line items comparable against any carrier quote.</p></div>
+</div>
+
+<p class="text-xs text-gray-500 mt-10">Last updated 2026-11-25 · Reviewed by W. Jeffrey Mann. Source: ShippingRates MCP server documentation (github.com/vinaybhosle/shippingrates-mcp), accessed 2026-11-25.</p>
+
+<div class="mt-6 bg-orange-600 hover:bg-orange-700 rounded-lg p-5 text-center text-white">
+<div class="text-xs uppercase tracking-widest font-bold">Free consultation &amp; price quote</div>
+<a href="tel:+18134913950" class="block text-3xl font-black mt-1">813-491-3950</a>
+<div class="text-sm mt-1">Call or text.</div>
+</div>
+</article>
+
+<p class="mt-6 text-sm"><a href="/answers/" class="text-blue-800 underline">← All answers</a></p>
+</main>
+
+<footer class="theme-bg text-gray-300 py-8 text-center text-sm">
+<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<p>&copy; 2026 Used Container Aggregator. A <a href="https://snarkyalma.com/" class="hover:text-white underline">Snarky Alma</a> project.</p>
+<div class="space-x-4 mt-4 md:mt-0">
+<a href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container" class="hover:text-white transition">Advertise with Us</a>
+<a href="https://snarkyalma.com/" class="hover:text-white transition">About</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

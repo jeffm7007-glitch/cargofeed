@@ -1,12 +1,13 @@
 # Used Container
 
-> Live aggregator for shipping container construction — container homes, cargotecture, adaptive reuse, and used-container buying. Refreshed automatically every 6 hours from Reddit communities and architecture publications.
+> Live aggregator for shipping container construction — container homes, cargotecture, adaptive reuse, and used-container buying — plus direct, sourced answers to shipping-market questions and a price-range calculator. Refreshed automatically every 6 hours.
 
 ## Sources
-- r/container_homes (Reddit) — residential container builds, progress photos, troubleshooting
-- r/Cargotecture (Reddit) — residential + commercial cargo architecture
-- r/shippingcontainers (Reddit) — buying used containers, storage conversions, reuse
-- Inhabitat — sustainable design, eco upcycling, off-grid builds
+- Used Conex (YouTube) — used container walkarounds, sizing guides, buying advice
+
+## Tools
+- [Price Calculator](https://containers.snarkyalma.com/calculator/) — price ranges by size (20ft / 40ft / 40ft HC), condition (new / cargo-worthy / some dings / as-is), and per-mile delivery
+- [Answers](https://containers.snarkyalma.com/answers/) — sourced Q&A pages: 40ft China–US cost structure, detention & demurrage, port congestion signals, 2027 container price direction, tradelane research method
 
 ## Adding a source
 Edit `feeds.txt` — one line per feed:
@@ -21,3 +22,4 @@ Commit and push; the next cron run picks it up.
 
 ## About
 Used Container is a [Snarky Alma](https://snarkyalma.com/) project — AI tooling for the built world.
+Quote line: call or text 813-491-3950 for a free consultation and price quote.
