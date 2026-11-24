@@ -18,7 +18,7 @@
 <style>
 .ad-space { background-color:#f3f4f6; border:2px dashed #9ca3af; display:flex; align-items:center; justify-content:center; color:#6b7280; font-weight:600; text-align:center; flex-direction:column; }
 .ad-slot { position:relative; border:2px dashed #9ca3af; border-radius:0.5rem; overflow:hidden; background-color:#f3f4f6; }
-.niche-ad { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:#fff; padding:0.75rem; transition:opacity .5s ease; }
+.niche-ad { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:#fff; padding:0.75rem; transition:opacity .5s ease; background-size:cover; background-position:center; }
 .niche-ad .kicker { font-size:0.6rem; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; opacity:0.85; }
 .niche-ad .head { font-weight:900; line-height:1.15; }
 .niche-ad .sub { font-size:0.7rem; opacity:0.9; max-width:32ch; }
@@ -61,7 +61,7 @@
 
 <div class="max-w-7xl mx-auto px-4 mt-6">
 <div class="w-full h-24 ad-slot" data-niche-slot>
-<div class="niche-ad ad-home"><span class="kicker">Home Storage</span><span class="head text-lg sm:text-xl">Garage Full? Get a Container.</span><span class="sub hidden sm:block">20ft wind &amp; water tight in your driveway — delivered this week.</span></div>
+<div class="niche-ad"></div>
 <a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 </div>
@@ -91,7 +91,7 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
 <div class="lg:col-span-3 space-y-6">
-<h1 class="text-3xl font-bold border-b-2 border-orange-500 pb-2 mb-6">Latest Container Updates <span class="text-sm font-normal text-gray-500">(10 stories, refreshed 2026-11-24 22:30 UTC)</span></h1>
+<h1 class="text-3xl font-bold border-b-2 border-orange-500 pb-2 mb-6">Latest Container Updates <span class="text-sm font-normal text-gray-500">(10 stories, refreshed 2026-11-24 22:45 UTC)</span></h1>
 
 <article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="forsale,residential,commercial" data-search="usedconex.com review | buying a wwt container made simple another happy customer! a wwt container delivered with no hassle—smooth ordering and reliable quality with usedconex.com. get an instant quote on our website at www.usedconex.com. call: 1-800-230-7764 email: info@usedconex.com… used conex (youtube)">
 <div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://i4.ytimg.com/vi/kheMTqNE6SI/hqdefault.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
@@ -268,12 +268,12 @@
 </div>
 
 <div class="w-full h-96 ad-slot" data-niche-slot>
-<div class="niche-ad ad-site"><span class="kicker">Job Site Storage</span><span class="head text-2xl">Tools Walking Off the Site?</span><span class="sub">40ft high-cube job boxes — lockable, delivered per project, swapped when you're done.</span></div>
+<div class="niche-ad"></div>
 <a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 
 <div class="w-full h-64 ad-slot" data-niche-slot>
-<div class="niche-ad ad-homes"><span class="kicker">Container Homes</span><span class="head text-xl">Build for Less Than a Stick-Frame Room</span><span class="sub">Used 40ft HC shells — the cargotecture starting point.</span></div>
+<div class="niche-ad"></div>
 <a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 
@@ -283,7 +283,7 @@
 
 <div class="max-w-7xl mx-auto px-4 mb-8">
 <div class="w-full h-24 ad-slot" data-niche-slot>
-<div class="niche-ad ad-sea"><span class="kicker">Overseas Shipping</span><span class="head text-lg sm:text-xl">Shipping Overseas? Price the Whole Lane.</span><span class="sub hidden sm:block">Port-to-port and door-to-door — freight, surcharges, inland, one total.</span></div>
+<div class="niche-ad"></div>
 <a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 </div>
@@ -347,11 +347,11 @@
 <script>
 (function () {
   var ADS = [
-    { cls: "ad-home", kicker: "Home Storage", head: "Garage Full? Get a Container.", sub: "20ft wind &amp; water tight in your driveway — delivered this week." },
-    { cls: "ad-site", kicker: "Job Site Storage", head: "Tools Walking Off the Site?", sub: "40ft high-cube job boxes — lockable, delivered per project, swapped when you're done." },
-    { cls: "ad-homes", kicker: "Container Homes", head: "Build for Less Than a Stick-Frame Room", sub: "Used 40ft HC shells — the cargotecture starting point." },
-    { cls: "ad-sea", kicker: "Overseas Shipping", head: "Shipping Overseas? Price the Whole Lane.", sub: "Port-to-port and door-to-door — freight, surcharges, inland, one total." },
-    { cls: "ad-land", kicker: "Land Transport", head: "Need a Box Moved 500 Miles?", sub: "Per-mile container hauling — delivered to your site, swapped when you're done." }
+    { cls: "ad-home", kicker: "Home Storage", head: "Garage Full? Get a Container.", sub: "20ft wind &amp; water tight in your driveway — delivered this week.", bg: "linear-gradient(135deg, rgba(6,95,70,.88), rgba(6,78,59,.92)), url('https://i4.ytimg.com/vi/kheMTqNE6SI/hqdefault.jpg')" },
+    { cls: "ad-site", kicker: "Job Site Storage", head: "Tools Walking Off the Site?", sub: "40ft high-cube job boxes — lockable, delivered per project, swapped when you're done.", bg: "linear-gradient(135deg, rgba(180,83,9,.88), rgba(124,45,18,.92)), url('https://i2.ytimg.com/vi/Az0w2DVaXJ0/hqdefault.jpg')" },
+    { cls: "ad-homes", kicker: "Container Homes", head: "Build for Less Than a Stick-Frame Room", sub: "Used 40ft HC shells — the cargotecture starting point.", bg: "linear-gradient(135deg, rgba(30,58,138,.88), rgba(15,31,77,.92)), url('https://i3.ytimg.com/vi/BcOoelGWIgw/hqdefault.jpg')" },
+    { cls: "ad-sea", kicker: "Overseas Shipping", head: "Shipping Overseas? Price the Whole Lane.", sub: "Port-to-port and door-to-door — freight, surcharges, inland, one total.", bg: "linear-gradient(135deg, rgba(12,74,110,.88), rgba(8,47,73,.92)), url('https://i2.ytimg.com/vi/HX_LLviW6Q8/hqdefault.jpg')" },
+    { cls: "ad-land", kicker: "Land Transport", head: "Need a Box Moved 500 Miles?", sub: "Per-mile container hauling — delivered to your site, swapped when you're done.", bg: "linear-gradient(135deg, rgba(51,65,85,.88), rgba(15,23,42,.92)), url('https://i4.ytimg.com/vi/_2IV_W9vbkA/hqdefault.jpg')" }
   ];
   var slots = Array.prototype.slice.call(document.querySelectorAll("[data-niche-slot]"));
   slots.forEach(function (slot, i) {
@@ -360,9 +360,11 @@
     function apply() {
       var a = ADS[idx % ADS.length];
       creative.className = "niche-ad " + a.cls;
+      creative.style.backgroundImage = a.bg;
       creative.innerHTML = '<span class="kicker">' + a.kicker + '</span><span class="head text-lg sm:text-xl">' + a.head + '</span>' + (slot.className.indexOf("h-24") < 0 ? '<span class="sub">' + a.sub + '</span>' : '<span class="sub hidden sm:block">' + a.sub + '</span>');
       idx++;
     }
+    apply();
     setInterval(function () {
       creative.style.opacity = "0";
       setTimeout(function () { apply(); creative.style.opacity = "1"; }, 500);
