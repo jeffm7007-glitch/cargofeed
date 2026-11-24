@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CargoFeed aggregator — fetch RSS/Atom sources, merge with last-good data, render static index.
+"""Used Container aggregator — fetch RSS/Atom sources, merge with last-good data, render static index.
 
 Stdlib only. Runs locally and in GitHub Actions (cron). Failure-tolerant:
 a source that fails keeps its last-fetched items until they age out.
@@ -224,7 +224,7 @@ def render(doc):
             media = f'<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="{esc(it["img"])}" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML=\'&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;\'"></div>'
         else:
             initials = "".join(w[0] for w in it["source"].split()[:2]).upper()
-            media = f'<div class="sm:w-1/3 h-48 sm:h-auto img-placeholder flex-col gap-1"><span class="text-3xl font-black" style="color:{esc(it.get("color","#9ca3af"))}">{esc(initials)}</span><span class="text-xs">CargoFeed</span></div>'
+            media = f'<div class="sm:w-1/3 h-48 sm:h-auto img-placeholder flex-col gap-1"><span class="text-3xl font-black" style="color:{esc(it.get("color","#9ca3af"))}">{esc(initials)}</span><span class="text-xs">Used Container</span></div>'
         extra = "hidden-extra" if i >= 12 else ""
         cards.append(CARD.format(
             extra=extra, cats=",".join(it.get("cats", [])), color=esc(it.get("color", "#1e3a8a")),

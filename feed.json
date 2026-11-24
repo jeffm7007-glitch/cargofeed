@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24T21:25:45.722748+00:00",
+ "generated_at": "2026-11-24T21:30:07.511378+00:00",
  "status": {
   "r/container_homes": {
    "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "error": "HTTP Error 404: Not Found"
   },
   "r/Cargotecture": {
    "ok": false,

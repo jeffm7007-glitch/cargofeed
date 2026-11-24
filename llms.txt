@@ -1,4 +1,4 @@
-# CargoFeed
+# Used Container
 
 > Live aggregator for shipping container construction — container homes, cargotecture, adaptive reuse, and used-container buying. Refreshed automatically every 6 hours from Reddit communities and architecture publications.
 
@@ -22,4 +22,4 @@ Commit and push; the next cron run picks it up.
 4. Copy the feed URL it gives you and add it to `feeds.txt` as a new line.
 
 ## About
-CargoFeed is a [Snarky Alma](https://snarkyalma.com/) project — AI tooling for the built world.
+Used Container is a [Snarky Alma](https://snarkyalma.com/) project — AI tooling for the built world.
