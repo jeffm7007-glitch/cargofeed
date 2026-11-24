@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- container body -->
+  <rect x="3" y="16" width="58" height="32" rx="4" fill="#1e3a8a"/>
+  <!-- corrugation -->
+  <g stroke="#3b5bb5" stroke-width="2.6" stroke-linecap="round">
+    <line x1="13" y1="21" x2="13" y2="43"/>
+    <line x1="21" y1="21" x2="21" y2="43"/>
+    <line x1="29" y1="21" x2="29" y2="43"/>
+    <line x1="37" y1="21" x2="37" y2="43"/>
+    <line x1="45" y1="21" x2="45" y2="43"/>
+    <line x1="53" y1="21" x2="53" y2="43"/>
+  </g>
+  <!-- top + bottom rails (orange) -->
+  <rect x="3" y="16" width="58" height="5" rx="2.5" fill="#ff6b35"/>
+  <rect x="3" y="43" width="58" height="5" rx="2.5" fill="#ff6b35"/>
+</svg>
