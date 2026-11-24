@@ -17,6 +17,15 @@
 </script>
 <style>
 .ad-space { background-color:#f3f4f6; border:2px dashed #9ca3af; display:flex; align-items:center; justify-content:center; color:#6b7280; font-weight:600; text-align:center; flex-direction:column; }
+.ad-slot { position:relative; border:2px dashed #9ca3af; border-radius:0.5rem; overflow:hidden; background-color:#f3f4f6; }
+.niche-ad { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:#fff; padding:0.75rem; transition:opacity .5s ease; }
+.niche-ad .kicker { font-size:0.6rem; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; opacity:0.85; }
+.niche-ad .head { font-weight:900; line-height:1.15; }
+.niche-ad .sub { font-size:0.7rem; opacity:0.9; max-width:32ch; }
+.ad-tag { position:absolute; top:4px; right:6px; z-index:10; font-size:0.55rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; background:rgba(0,0,0,0.55); color:#fff; padding:2px 6px; border-radius:9999px; text-decoration:none; }
+.ad-homes { background:linear-gradient(135deg,#1e3a8a,#0f1f4d); }
+.ad-site { background:linear-gradient(135deg,#b45309,#7c2d12); }
+.ad-home { background:linear-gradient(135deg,#065f46,#064e3b); }
 .img-placeholder { background-color:#e5e7eb; display:flex; align-items:center; justify-content:center; color:#9ca3af; font-size:0.875rem; }
 .theme-bg { background-color:#1e3a8a; }
 .theme-accent { background-color:#ea580c; }
@@ -49,9 +58,9 @@
 </header>
 
 <div class="max-w-7xl mx-auto px-4 mt-6">
-<div class="w-full h-24 ad-space">
-<span>Top Horizontal Banner Ad</span>
-<span class="text-xs text-gray-400 mt-1">(Leaderboard: 728 x 90 or 970 x 90)</span>
+<div class="w-full h-24 ad-slot" data-niche-slot>
+<div class="niche-ad ad-home"><span class="kicker">Home Storage</span><span class="head text-lg sm:text-xl">Garage Full? Get a Container.</span><span class="sub hidden sm:block">20ft wind &amp; water tight in your driveway — delivered this week.</span></div>
+<a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 </div>
 
@@ -113,14 +122,14 @@
 <p class="text-xs text-gray-400 mt-3">Auto-refresh every 6 hours. Want a source added? <a class="underline" href="mailto:jeffm7007@gmail.com?subject=Used Container%20source%20request">Email the desk</a>.</p>
 </div>
 
-<div class="w-full h-96 ad-space">
-<span>Vertical Ad Slot</span>
-<span class="text-xs text-gray-400 mt-1">(Half Page: 300 x 600)</span>
+<div class="w-full h-96 ad-slot" data-niche-slot>
+<div class="niche-ad ad-site"><span class="kicker">Job Site Storage</span><span class="head text-2xl">Tools Walking Off the Site?</span><span class="sub">40ft high-cube job boxes — lockable, delivered per project, swapped when you're done.</span></div>
+<a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 
-<div class="w-full h-64 ad-space">
-<span>Vertical Ad Slot</span>
-<span class="text-xs text-gray-400 mt-1">(Medium Rectangle: 300 x 250)</span>
+<div class="w-full h-64 ad-slot" data-niche-slot>
+<div class="niche-ad ad-homes"><span class="kicker">Container Homes</span><span class="head text-xl">Build for Less Than a Stick-Frame Room</span><span class="sub">Used 40ft HC shells — the cargotecture starting point.</span></div>
+<a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 
 </aside>
@@ -128,9 +137,9 @@
 </main>
 
 <div class="max-w-7xl mx-auto px-4 mb-8">
-<div class="w-full h-24 ad-space">
-<span>Bottom Horizontal Banner Ad</span>
-<span class="text-xs text-gray-400 mt-1">(Leaderboard: 728 x 90)</span>
+<div class="w-full h-24 ad-slot" data-niche-slot>
+<div class="niche-ad ad-site"><span class="kicker">Job Site Storage</span><span class="head text-lg sm:text-xl">One Box. Every Tool. Zero Theft.</span><span class="sub hidden sm:block">Monthly job-site container rentals, delivered and swapped.</span></div>
+<a class="ad-tag" href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container">Sample · Advertise</a>
 </div>
 </div>
 
@@ -186,6 +195,31 @@
     extra.forEach(function (el) { el.classList.remove("hidden-extra"); el.classList.add("filter-show"); });
     document.getElementById("loadmore-wrap").style.display = "none";
     apply();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var ADS = [
+    { cls: "ad-home", kicker: "Home Storage", head: "Garage Full? Get a Container.", sub: "20ft wind &amp; water tight in your driveway — delivered this week." },
+    { cls: "ad-site", kicker: "Job Site Storage", head: "Tools Walking Off the Site?", sub: "40ft high-cube job boxes — lockable, delivered per project, swapped when you're done." },
+    { cls: "ad-homes", kicker: "Container Homes", head: "Build for Less Than a Stick-Frame Room", sub: "Used 40ft HC shells — the cargotecture starting point." }
+  ];
+  var slots = Array.prototype.slice.call(document.querySelectorAll("[data-niche-slot]"));
+  slots.forEach(function (slot, i) {
+    var idx = i % ADS.length;
+    var creative = slot.querySelector(".niche-ad");
+    function apply() {
+      var a = ADS[idx % ADS.length];
+      creative.className = "niche-ad " + a.cls;
+      creative.innerHTML = '<span class="kicker">' + a.kicker + '</span><span class="head text-lg sm:text-xl">' + a.head + '</span>' + (slot.className.indexOf("h-24") < 0 ? '<span class="sub">' + a.sub + '</span>' : '<span class="sub hidden sm:block">' + a.sub + '</span>');
+      idx++;
+    }
+    setInterval(function () {
+      creative.style.opacity = "0";
+      setTimeout(function () { apply(); creative.style.opacity = "1"; }, 500);
+    }, 6000 + i * 1500);
   });
 })();
 </script>
