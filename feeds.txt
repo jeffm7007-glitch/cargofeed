@@ -5,7 +5,5 @@
 r/container_homes|https://www.reddit.com/r/container_homes/.rss|residential,diy|#ea580c
 r/Cargotecture|https://www.reddit.com/r/Cargotecture/.rss|commercial,design,diy|#2563eb
 r/shippingcontainers|https://www.reddit.com/r/shippingcontainers/.rss|forsale,diy|#16a34a
-Dezeen Architecture|https://www.dezeen.com/architecture/feed/|commercial,design|#111827
-ArchDaily|https://www.archdaily.com/.xml|commercial,design|#1d4ed8
 Inhabitat|https://inhabitat.com/feed/|residential,diy,design|#059669
 Used Conex (YouTube)|https://www.youtube.com/feeds/videos.xml?channel_id=UCIHY6u7PDFNCUM4Yc210TjA|forsale,residential,commercial|#b45309|9999

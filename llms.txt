@@ -6,8 +6,6 @@
 - r/container_homes (Reddit) — residential container builds, progress photos, troubleshooting
 - r/Cargotecture (Reddit) — residential + commercial cargo architecture
 - r/shippingcontainers (Reddit) — buying used containers, storage conversions, reuse
-- Dezeen Architecture — international container restaurants, hotels, shelters, homes
-- ArchDaily — modular and shipping container case studies
 - Inhabitat — sustainable design, eco upcycling, off-grid builds
 
 ## Adding a source
