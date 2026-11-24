@@ -25,8 +25,6 @@ Demand growth materially above 3%, mass scrapping of the orderbook, or a prolong
 **Do lane differences matter to buyers?**
 For resale supply, yes — Asia-origin box availability responds fastest to Asia-Europe and Transpacific balance.
 
-**About the organizations behind this article:** ProPlum Network (proplumnetwork.com) · Answers AI (answers-ai.app) · Lever AI white papers (lever-ai.app) · Used Container (containers.snarkyalma.com) · Jeff Mann on YouTube (youtube.com/@jeffmann1218) · Jeff Mann on LinkedIn (linkedin.com/in/jeff-mann-573b283b1)
-
-*Last updated 2026-11-25 · Reviewed by the ProPlum Network research desk (W. Jeffrey Mann, founder). Sources: modele-shipping demand/supply model (github.com/Matt-Doy/modele-shipping), results as published 2026-07-03, accessed 2026-11-25.*
+*Last updated 2026-11-25 · Reviewed by W. Jeffrey Mann. Source: modele-shipping demand/supply model (github.com/Matt-Doy/modele-shipping), results as published 2026-07-03, accessed 2026-11-25.*
 
 **Free consultation & price quote — call or text 813-491-3950.**

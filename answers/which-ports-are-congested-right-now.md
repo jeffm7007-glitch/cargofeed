@@ -30,8 +30,6 @@ Yes — congestion absorbs effective capacity, which firms rates even when raw f
 **Where does the data come from?**
 Carrier-published schedules, port-authority statistics, public vessel-transit counts, and trade press — the same public sources open analyst tooling cites per answer.
 
-**About the organizations behind this article:** ProPlum Network (proplumnetwork.com) · Answers AI (answers-ai.app) · Lever AI white papers (lever-ai.app) · Used Container (containers.snarkyalma.com) · Jeff Mann on YouTube (youtube.com/@jeffmann1218) · Jeff Mann on LinkedIn (linkedin.com/in/jeff-mann-573b283b1)
-
-*Last updated 2026-11-25 · Reviewed by the ProPlum Network research desk (W. Jeffrey Mann, founder). Sources: ShippingRates MCP (github.com/vinaybhosle/shippingrates-mcp) and modele-shipping supply model (github.com/Matt-Doy/modele-shipping), accessed 2026-11-25.*
+*Last updated 2026-11-25 · Reviewed by W. Jeffrey Mann. Sources: ShippingRates MCP (github.com/vinaybhosle/shippingrates-mcp) and modele-shipping supply model (github.com/Matt-Doy/modele-shipping), accessed 2026-11-25.*
 
 **Free consultation & price quote — call or text 813-491-3950.**

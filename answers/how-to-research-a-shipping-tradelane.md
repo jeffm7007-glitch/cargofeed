@@ -25,8 +25,6 @@ Where rates hold in an oversupplied market (concentrated, thin trades) and where
 **Is the method free to use?**
 Yes — MIT-licensed, portable across Claude, ChatGPT, and Gemini.
 
-**About the organizations behind this article:** ProPlum Network (proplumnetwork.com) · Answers AI (answers-ai.app) · Lever AI white papers (lever-ai.app) · Used Container (containers.snarkyalma.com) · Jeff Mann on YouTube (youtube.com/@jeffmann1218) · Jeff Mann on LinkedIn (linkedin.com/in/jeff-mann-573b283b1)
-
-*Last updated 2026-11-25 · Reviewed by the ProPlum Network research desk (W. Jeffrey Mann, founder). Sources: tradelane-intel analyst method (github.com/urveshdev/tradelane-intel), accessed 2026-11-25.*
+*Last updated 2026-11-25 · Reviewed by W. Jeffrey Mann. Source: tradelane-intel analyst method (github.com/urveshdev/tradelane-intel), accessed 2026-11-25.*
 
 **Free consultation & price quote — call or text 813-491-3950.**

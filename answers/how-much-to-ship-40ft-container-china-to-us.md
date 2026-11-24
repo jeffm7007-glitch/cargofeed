@@ -30,8 +30,6 @@ A documentation fee for the contract of carriage, charged per shipment by the ca
 **How current is open tariff data?**
 The ShippingRates tools report their own last-updated statistics; its database-stats tool returns record counts and update timestamps on demand.
 
-**About the organizations behind this article:** ProPlum Network (proplumnetwork.com) · Answers AI (answers-ai.app) · Lever AI white papers (lever-ai.app) · Used Container (containers.snarkyalma.com) · Jeff Mann on YouTube (youtube.com/@jeffmann1218) · Jeff Mann on LinkedIn (linkedin.com/in/jeff-mann-573b283b1)
-
-*Last updated 2026-11-25 · Reviewed by the ProPlum Network research desk (W. Jeffrey Mann, founder). Sources: ShippingRates MCP server documentation (github.com/vinaybhosle/shippingrates-mcp), accessed 2026-11-25.*
+*Last updated 2026-11-25 · Reviewed by W. Jeffrey Mann. Source: ShippingRates MCP server documentation (github.com/vinaybhosle/shippingrates-mcp), accessed 2026-11-25.*
 
 **Free consultation & price quote — call or text 813-491-3950.**
