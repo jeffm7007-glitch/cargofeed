@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipping Container Price Range Calculator — New, Used, As-Is + Delivery | Used Container</title>
+<meta name="description" content="Instant price ranges for shipping containers: new one-trip, used cargo-worthy, used with dings, and as-is units in 20ft, 40ft, and 40ft high cube — plus transport cost by distance.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Used Container","url":"https://containers.snarkyalma.com/",
+ "description":"Shipping container price ranges and buying guides.",
+ "isPartOf":{"@type":"Organization","name":"Snarky Alma","url":"https://snarkyalma.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much does a used 40ft shipping container cost?","acceptedAnswer":{"@type":"Answer","text":"Typical US retail ranges for a used 40ft dry container run roughly $1,900–$3,600 cargo-worthy, $1,500–$2,600 with heavy cosmetic dings, and $900–$1,800 as-is. New one-trip 40ft units run roughly $5,200–$8,500. Delivery is usually billed per loaded mile."}},
+{"@type":"Question","name":"What does cargo-worthy mean for a used container?","acceptedAnswer":{"@type":"Answer","text":"Cargo-worthy means the container is wind and water tight with a solid floor, safe for storage or shipping, with dents and surface rust accepted. It is the standard workhorse grade of the used market."}},
+{"@type":"Question","name":"How much does it cost to deliver a shipping container?","acceptedAnswer":{"@type":"Answer","text":"Container delivery in the US typically runs about $3–$6 per loaded mile by tilt-bed or flatbed truck, with many carriers setting a minimum trip charge. Pickup at the depot avoids the charge entirely."}}
+]}
+</script>
+<style>
+.theme-bg { background-color:#1e3a8a; }
+.theme-accent { background-color:#ea580c; }
+.theme-accent-hover:hover { background-color:#c2410c; }
+.size-btn, .cond-btn { transition: all .15s ease; }
+.size-btn.active, .cond-btn.active { background-color:#ea580c; color:#fff; border-color:#ea580c; }
+</style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<header class="theme-bg text-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex-shrink-0 flex items-center gap-2">
+<a href="/" class="font-black text-2xl tracking-tighter uppercase">Used<span class="text-orange-500">Container</span></a>
+</div>
+<nav class="hidden md:flex space-x-8 font-semibold">
+<a href="/" class="hover:text-orange-400 transition">Latest Projects</a>
+<a href="/calculator/" class="text-orange-400 transition">Price Calculator</a>
+<a href="tel:+18134913950" class="hover:text-orange-400 transition">813-491-3950</a>
+</nav>
+<div class="flex items-center">
+<a href="tel:+18134913950" class="md:hidden font-bold text-orange-400">📞 813</a>
+</div>
+</div>
+</div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-8">
+
+<h1 class="text-3xl md:text-4xl font-black mb-2">Shipping Container Price Range Calculator</h1>
+<p class="text-gray-600 mb-8">Pick a size, pick a condition, add transport — get the real market range before you call anyone.</p>
+
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+
+<!-- CONTROLS -->
+<div class="lg:col-span-3 space-y-6">
+
+  <div class="bg-white rounded-lg shadow p-6">
+    <h2 class="font-bold text-lg mb-3 border-b border-orange-500 pb-2">1 · Container Size</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <button type="button" class="size-btn border-2 border-gray-300 rounded-lg p-4 text-left" data-size="20">
+        <div class="font-black text-xl">20ft</div><div class="text-sm opacity-75">Standard · 1,169 cu ft</div>
+      </button>
+      <button type="button" class="size-btn border-2 border-gray-300 rounded-lg p-4 text-left" data-size="40">
+        <div class="font-black text-xl">40ft</div><div class="text-sm opacity-75">Standard · 2,385 cu ft</div>
+      </button>
+      <button type="button" class="size-btn border-2 border-gray-300 rounded-lg p-4 text-left" data-size="40HC">
+        <div class="font-black text-xl">40ft HC</div><div class="text-sm opacity-75">High Cube · 2,694 cu ft</div>
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow p-6">
+    <h2 class="font-bold text-lg mb-3 border-b border-orange-500 pb-2">2 · Condition</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <button type="button" class="cond-btn border-2 border-gray-300 rounded-lg p-4 text-left" data-cond="new">
+        <div class="font-black">New (One-Trip)</div>
+        <div class="text-sm opacity-75">One ocean voyage, near-pristine. Highest price, longest life.</div>
+      </button>
+      <button type="button" class="cond-btn border-2 border-gray-300 rounded-lg p-4 text-left" data-cond="cw">
+        <div class="font-black">Used — Cargo Worthy</div>
+        <div class="text-sm opacity-75">Wind &amp; water tight, solid floor. Dents and surface rust OK. The workhorse grade.</div>
+      </button>
+      <button type="button" class="cond-btn border-2 border-gray-300 rounded-lg p-4 text-left" data-cond="dings">
+        <div class="font-black">Used — Some Dings</div>
+        <div class="text-sm opacity-75">Wind &amp; water tight but heavy cosmetic wear, patched spots, more rust. Works fine, looks rough.</div>
+      </button>
+      <button type="button" class="cond-btn border-2 border-gray-300 rounded-lg p-4 text-left" data-cond="asis">
+        <div class="font-black">As-Is</div>
+        <div class="text-sm opacity-75">Sold in current condition, no WWT guarantee, may need floor or patch work. Cheapest entry.</div>
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow p-6">
+    <h2 class="font-bold text-lg mb-3 border-b border-orange-500 pb-2">3 · Transport</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+      <button type="button" id="tPickup" class="size-btn border-2 border-gray-300 rounded-lg p-4 text-left font-bold">I'll pick it up<span class="block text-sm font-normal opacity-75">No delivery charge</span></button>
+      <button type="button" id="tDeliver" class="size-btn border-2 border-gray-300 rounded-lg p-4 text-left font-bold">Deliver it to me<span class="block text-sm font-normal opacity-75">Billed per loaded mile</span></button>
+    </div>
+    <div id="milesWrap" class="hidden">
+      <label class="block text-sm font-semibold mb-1" for="miles">One-way delivery distance: <span id="milesOut" class="text-orange-600 font-black">50</span> miles</label>
+      <input id="miles" type="range" min="10" max="500" value="50" class="w-full accent-orange-600">
+      <p class="text-xs text-gray-500 mt-1">Rate applied: $3.00 – $6.00 per loaded mile (typical tilt-bed/flatbed range; carriers often set a minimum trip charge).</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- RESULT -->
+<div class="lg:col-span-2">
+  <div class="bg-white rounded-lg shadow p-6 sticky top-24">
+    <h2 class="font-bold text-lg mb-4 border-b border-orange-500 pb-2">Your Range</h2>
+    <div id="pickPrompt" class="text-gray-500 text-sm">Select a size and condition to see the market range.</div>
+    <div id="resultBox" class="hidden">
+      <div class="text-sm text-gray-500" id="rLabel"></div>
+      <div class="text-3xl font-black my-1" id="rBox"></div>
+      <div class="text-sm text-gray-600" id="rTransport"></div>
+      <div class="border-t-2 border-dashed border-gray-300 my-3"></div>
+      <div class="text-sm text-gray-500">Estimated total, delivered</div>
+      <div class="text-4xl font-black text-orange-600" id="rTotal"></div>
+      <p class="text-xs text-gray-500 mt-4">Ranges reflect typical published US retail asking prices — every market and week differs. Condition of the exact unit, depot location, and delivery access (tilt-bed needs ~60ft of straight room) all move the final number.</p>
+    </div>
+    <div class="mt-6 theme-accent theme-accent-hover rounded-lg p-4 text-center text-white">
+      <div class="text-xs uppercase tracking-widest font-bold">Free consultation &amp; price quote</div>
+      <a href="tel:+18134913950" class="block text-3xl font-black mt-1">813-491-3950</a>
+      <div class="text-sm mt-1">Call or text — exact quote on your exact unit.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- FAQ -->
+<section class="mt-10 bg-white rounded-lg shadow p-6">
+  <h2 class="font-bold text-lg mb-3 border-b border-orange-500 pb-2">Common questions</h2>
+  <div class="space-y-4 text-sm">
+    <div><p class="font-bold">Why is there a range instead of one price?</p><p class="text-gray-600">Container prices move with steel costs, freight cycles, and local depot inventory. Two identical boxes an hour apart can price differently. The range is the honest answer; the phone quote is the exact one.</p></div>
+    <div><p class="font-bold">What's the difference between cargo-worthy and as-is?</p><p class="text-gray-600">Cargo-worthy guarantees wind and water tight with a solid, safe floor. As-is makes no guarantee — you inspect (or gamble) and may need floor patches or door work. The gap is usually hundreds of dollars.</p></div>
+    <div><p class="font-bold">Does delivery include placement?</p><p class="text-gray-600">Tilt-bed delivery usually includes sliding the container off the bed to ground level where the truck can reach. Tell the driver about gates, slopes, and soft ground — none of those are calculator problems, they're phone problems.</p></div>
+  </div>
+</section>
+
+<p class="text-xs text-gray-500 mt-6">Ranges compiled 2026-11-25 from typical published US retail listings for standard dry containers. Refreshed periodically; markets move weekly. This page is a planning tool, not a binding quote.</p>
+
+</main>
+
+<footer class="theme-bg text-gray-300 py-8 text-center text-sm">
+<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<p>&copy; 2026 Used Container Aggregator. A <a href="https://snarkyalma.com/" class="hover:text-white underline">Snarky Alma</a> project.</p>
+<div class="space-x-4 mt-4 md:mt-0">
+<a href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20Used%20Container" class="hover:text-white transition">Advertise with Us</a>
+<a href="https://snarkyalma.com/" class="hover:text-white transition">About</a>
+</div>
+</div>
+</footer>
+
+<script>
+/* ============================================================
+   EDIT PRICES HERE — Jeff dictates, jenni updates.
+   Each entry: [low, high] in USD. Sizes: 20 / 40 / 40HC.
+   Conditions: new / cw (cargo-worthy) / dings / asis.
+   Transport: $ per loaded mile, low & high.
+   ============================================================ */
+var PRICES = {
+  "20":    { new: [3200, 5500], cw: [1400, 2600], dings: [1000, 1900], asis: [600, 1300] },
+  "40":    { new: [5200, 8500], cw: [1900, 3600], dings: [1500, 2600], asis: [900, 1800] },
+  "40HC":  { new: [5800, 9200], cw: [2300, 4000], dings: [1800, 3000], asis: [1100, 2200] }
+};
+var TRANSPORT_PER_MILE = [3.0, 6.0];
+/* ============================================================ */
+
+var state = { size: null, cond: null, mode: null };
+var money = function (n) { return "$" + Math.round(n).toLocaleString(); };
+
+function fmtRange(p) { return money(p[0]) + " – " + money(p[1]); }
+
+function render() {
+  var prompt = document.getElementById("pickPrompt");
+  var box = document.getElementById("resultBox");
+  if (!state.size || !state.cond) { prompt.classList.remove("hidden"); box.classList.add("hidden"); return; }
+  prompt.classList.add("hidden"); box.classList.remove("hidden");
+
+  var price = PRICES[state.size][state.cond];
+  var condNames = { new: "New (one-trip)", cw: "Used — cargo-worthy", dings: "Used — some dings", asis: "As-is" };
+  document.getElementById("rLabel").textContent = state.size.replace("HC", "ft High Cube").replace(/^20$/, "20ft").replace(/^40$/, "40ft") + " · " + condNames[state.cond];
+
+  var miles = parseInt(document.getElementById("miles").value, 10);
+  var tLow = 0, tHigh = 0;
+  if (state.mode === "deliver") {
+    tLow = miles * TRANSPORT_PER_MILE[0];
+    tHigh = miles * TRANSPORT_PER_MILE[1];
+    document.getElementById("rTransport").textContent = "Transport (~" + miles + " mi): " + fmtRange([tLow, tHigh]);
+  } else {
+    document.getElementById("rTransport").textContent = state.mode === "pickup" ? "Transport: pickup — $0" : "Transport: not selected";
+  }
+  document.getElementById("rBox").textContent = fmtRange(price);
+  document.getElementById("rTotal").textContent = state.mode ? fmtRange([price[0] + tLow, price[1] + tHigh]) : "add transport ↑";
+}
+
+document.querySelectorAll(".size-btn[data-size]").forEach(function (b) {
+  b.addEventListener("click", function () {
+    document.querySelectorAll(".size-btn[data-size]").forEach(function (x) { x.classList.remove("active"); });
+    b.classList.add("active"); state.size = b.dataset.size; render();
+  });
+});
+document.querySelectorAll(".cond-btn[data-cond]").forEach(function (b) {
+  b.addEventListener("click", function () {
+    document.querySelectorAll(".cond-btn[data-cond]").forEach(function (x) { x.classList.remove("active"); });
+    b.classList.add("active"); state.cond = b.dataset.cond; render();
+  });
+});
+var tp = document.getElementById("tPickup"), td = document.getElementById("tDeliver"), mw = document.getElementById("milesWrap");
+tp.addEventListener("click", function () { tp.classList.add("active"); td.classList.remove("active"); mw.classList.add("hidden"); state.mode = "pickup"; render(); });
+td.addEventListener("click", function () { td.classList.add("active"); tp.classList.remove("active"); mw.classList.remove("hidden"); state.mode = "deliver"; render(); });
+document.getElementById("miles").addEventListener("input", function () {
+  document.getElementById("milesOut").textContent = this.value; render();
+});
+</script>
+
+</body>
+</html>
