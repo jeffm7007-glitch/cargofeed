@@ -109,7 +109,8 @@ def load_sources():
         if len(parts) >= 2:
             sources.append({"name": parts[0], "url": parts[1],
                             "cats": [c.strip() for c in (parts[2] if len(parts) > 2 else "misc").split(",") if c.strip()],
-                            "color": parts[3] if len(parts) > 3 else "#1e3a8a"})
+                            "color": parts[3] if len(parts) > 3 else "#1e3a8a",
+                            "max_age": int(parts[4]) if len(parts) > 4 and parts[4].isdigit() else MAX_AGE_DAYS})
     return sources
 
 def rel_time(iso):
@@ -164,13 +165,19 @@ def main():
     merged.update({})  # noop, clarity
 
     items = list(merged.values())
-    cutoff = NOW - datetime.timedelta(days=MAX_AGE_DAYS)
+    age_by_source = {s["name"]: s["max_age"] for s in load_sources()}
     def dt_of(it):
         try:
             return datetime.datetime.fromisoformat(it.get("date") or "")
         except Exception:
             return datetime.datetime.min.replace(tzinfo=datetime.timezone.utc)
-    items = [it for it in items if (lambda d: d is None or d >= cutoff)(dt_of(it))]
+    def fresh_enough(it):
+        d = dt_of(it)
+        if d is None or d.year < 2000:
+            return True
+        tol = age_by_source.get(it.get("source"), MAX_AGE_DAYS)
+        return d >= NOW - datetime.timedelta(days=tol)
+    items = [it for it in items if fresh_enough(it)]
     items.sort(key=dt_of, reverse=True)
     items = items[:MAX_TOTAL]
 

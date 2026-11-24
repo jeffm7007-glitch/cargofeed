@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24T18:38:36.913680+00:00",
+ "generated_at": "2026-11-24T21:25:03.065585+00:00",
  "status": {
   "r/container_homes": {
    "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "error": "HTTP Error 404: Not Found"
   },
   "r/Cargotecture": {
    "ok": false,
@@ -24,9 +24,13 @@
   "Inhabitat": {
    "ok": false,
    "error": "HTTP Error 403: Forbidden"
+  },
+  "Used Conex (YouTube)": {
+   "ok": true,
+   "fetched": 10
   }
  },
- "item_count": 20,
+ "item_count": 30,
  "items": [
   {
    "title": "Studio Gang completes women's leadership campus in Wisconsin",
@@ -36,6 +40,32 @@
    "img": "https://static-2026.dezeen.com/uploads/2026/11/womens-leadership-center-williams-bay-wisconsin-studio-gang_dezeen_2364_sq-1-1024x1024.jpg",
    "source": "Dezeen Architecture",
    "color": "#111827",
+   "cats": [
+    "commercial",
+    "design"
+   ]
+  },
+  {
+   "title": "Rivas Struque House / Mas Fernandez Arquitectos",
+   "link": "https://www.archdaily.com/1151143/rivas-struque-house-mas-fernandez-arquitectos",
+   "date": "2026-11-24T15:00:00+00:00",
+   "desc": "Located in the commune of Lo Barnechea, in the foothills of Santiago, the project is situated in the Lomas de la Cruz sector. This new development at the entrance of Los Trapenses features only a few available lots for custom,…",
+   "img": "https://images.adsttc.com/media/images/6797/ca9c/e4b3/5801/8aa5/a685/newsletter/casa-rivas-struque-mas-fernandez-arquitectos_3.jpg?1738001082",
+   "source": "ArchDaily",
+   "color": "#1d4ed8",
+   "cats": [
+    "commercial",
+    "design"
+   ]
+  },
+  {
+   "title": "Paola Lenti Flagship / Armentano Arquitetura | AARQ",
+   "link": "https://www.archdaily.com/1189170/paola-lenti-flagship-armentano-arquitetura-aarq",
+   "date": "2026-11-24T13:00:00+00:00",
+   "desc": "In São Paulo, a glass box supported by a metal grid and enveloped by a green trellis translates into architecture the fusion of craftsmanship and technology that defines Paola Lenti’s furniture.",
+   "img": "https://images.adsttc.com/media/images/6b04/877d/94d7/ea00/019d/0341/newsletter/_T2A4062.jpg?1795459181",
+   "source": "ArchDaily",
+   "color": "#1d4ed8",
    "cats": [
     "commercial",
     "design"
@@ -198,32 +228,6 @@
    ]
   },
   {
-   "title": "The Portuguese Pavilion to Invite Four African Countries Through \"Hands on the Ground\" at the 2027 Venice Architecture Biennale",
-   "link": "https://www.archdaily.com/1189091/the-portuguese-pavilion-to-invite-four-african-countries-through-hands-on-the-ground-at-the-2027-venice-architecture-biennale",
-   "date": "2026-11-24T05:30:00+00:00",
-   "desc": "The Portuguese Directorate-General for the Arts announced on November 16 the curatorial proposal that will represent the country at the 20th International Architecture Exhibition – La Biennale di Venezia in 2027 . The selected project was…",
-   "img": "https://images.adsttc.com/media/images/6b04/8b52/dd54/ea01/8880/ef9b/newsletter/portugal-pavilion_4.jpg?1795459926",
-   "source": "ArchDaily",
-   "color": "#1d4ed8",
-   "cats": [
-    "commercial",
-    "design"
-   ]
-  },
-  {
-   "title": "The Power of the Streets: Why Cities Remain Irreplaceable in the Digital Age",
-   "link": "https://www.archdaily.com/1188636/the-power-of-the-streets-why-cities-remain-irreplaceable-in-the-digital-age",
-   "date": "2026-11-24T04:00:00+00:00",
-   "desc": "Whether in Lisbon's medieval alleyways , along Haussmann's boulevards in Paris , on the wide avenues of car-oriented Chicago , or amid the metropolitan intensity of Avenida Paulista in São Paulo , different urban morphologies seem to give…",
-   "img": "https://images.adsttc.com/media/images/6af7/8b3a/c23f/1f01/895a/fd03/newsletter/the-power-of-the-streets-why-cities-remain-irreplaceable-in-the-digital-age_2.jpg?1794607962",
-   "source": "ArchDaily",
-   "color": "#1d4ed8",
-   "cats": [
-    "commercial",
-    "design"
-   ]
-  },
-  {
    "title": "HTA Design unveils \"UK's largest council housing development\"",
    "link": "https://www.dezeen.com/2026/11/23/kidbrooke-park-road-hta-design/",
    "date": "2026-11-23T11:30:00+00:00",
@@ -286,6 +290,146 @@
    "cats": [
     "commercial",
     "design"
+   ]
+  },
+  {
+   "title": "UsedConex.com Review | Buying a WWT Container Made Simple",
+   "link": "https://www.youtube.com/shorts/kheMTqNE6SI",
+   "date": "2025-09-19T16:01:33+00:00",
+   "desc": "Another happy customer! A WWT container delivered with no hassle—smooth ordering and reliable quality with UsedConex.com. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
+   "img": "https://www.youtube.com/v/kheMTqNE6SI?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Cargo Worthy Shipping Container on Telephone Poles | UsedConex.com",
+   "link": "https://www.youtube.com/shorts/Az0w2DVaXJ0",
+   "date": "2025-09-16T16:00:26+00:00",
+   "desc": "This customer explains how simple it was to get a cargo worthy container delivered and set on telephone poles. Sturdy, ready to use, and hassle-free. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email:…",
+   "img": "https://www.youtube.com/v/Az0w2DVaXJ0?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Customer Review: Used Conex Shipping Container Worth It!",
+   "link": "https://www.youtube.com/shorts/9jfCvDCqkQY",
+   "date": "2025-09-12T16:00:27+00:00",
+   "desc": "Great service, dependable delivery, and a new one trip container in excellent shape. Hear why this customer recommends Used Conex! Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
+   "img": "https://www.youtube.com/v/9jfCvDCqkQY?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Customer Review: Used Conex Shipping Container Worth It!",
+   "link": "https://www.youtube.com/shorts/2yHMxS0MMCI",
+   "date": "2025-09-09T16:00:08+00:00",
+   "desc": "This customer highlights the great condition of their container and how it fit their storage needs perfectly ✅ Affordable, durable, and exactly what they were looking for. Get an instant quote on our website at www.usedconex.com. Call:…",
+   "img": "https://www.youtube.com/v/2yHMxS0MMCI?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Happy Customer Shares Used Conex Experience | Reliable Container Delivery",
+   "link": "https://www.youtube.com/shorts/e-OcEa2KP0c",
+   "date": "2025-09-05T16:01:16+00:00",
+   "desc": "Trust is key. This customer highlights that our container quality and delivery process lived up to expectations Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com #shippingcontainers…",
+   "img": "https://www.youtube.com/v/e-OcEa2KP0c?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Honest Feedback: Buying a Shipping Container from UsedConex.com",
+   "link": "https://www.youtube.com/shorts/gnn4RD-3C_g",
+   "date": "2025-09-02T16:01:09+00:00",
+   "desc": "See why Used Conex continues to earn 5-star reviews for shipping containers across the U.S. Quality containers, professional service, happy customers. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email:…",
+   "img": "https://www.youtube.com/v/gnn4RD-3C_g?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Used Conex Review | Reliable Shipping Container Purchase Experience",
+   "link": "https://www.youtube.com/shorts/IHEjGwHPCcU",
+   "date": "2025-08-29T16:00:36+00:00",
+   "desc": "See why more people trust Used Conex when buying shipping containers online. Great service, reliable containers, and happy customers. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
+   "img": "https://www.youtube.com/v/IHEjGwHPCcU?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Used Conex Customer Review | Cargo Worthy Container Holds Up After Rain",
+   "link": "https://www.youtube.com/shorts/HX_LLviW6Q8",
+   "date": "2025-08-26T16:00:29+00:00",
+   "desc": "See why this customer was impressed with their 40ft high cube shipping container from UsedConex.com. Even after heavy rain, it stayed completely dry and reliable. Get an instant quote on our website at www.usedconex.com. Call:…",
+   "img": "https://www.youtube.com/v/HX_LLviW6Q8?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Used Conex Shipping Container Storage for Vehicles & More",
+   "link": "https://www.youtube.com/shorts/_2IV_W9vbkA",
+   "date": "2025-08-22T16:01:04+00:00",
+   "desc": "See how easily a UTV fits inside our container. Extra space, top quality, and dependable storage—exactly what you need. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
+   "img": "https://www.youtube.com/v/_2IV_W9vbkA?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
+   ]
+  },
+  {
+   "title": "Used Conex Container Review — Plenty of Room for a Skid Steer 🚜",
+   "link": "https://www.youtube.com/shorts/BcOoelGWIgw",
+   "date": "2025-08-19T16:00:15+00:00",
+   "desc": "This customer uses their Used Conex container to store a skid steer. Spacious, secure, and the perfect fit for equipment storage. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
+   "img": "https://www.youtube.com/v/BcOoelGWIgw?version=3",
+   "source": "Used Conex (YouTube)",
+   "color": "#b45309",
+   "cats": [
+    "forsale",
+    "residential",
+    "commercial"
    ]
   }
  ]
