@@ -1,0 +1,30 @@
+name: fetch-video
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Video URL to download"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install yt-dlp
+        run: pipx install yt-dlp || pip install yt-dlp
+      - name: Download video
+        run: |
+          yt-dlp -f "best[height<=720]/best" --merge-output-format mp4 \
+            -o "video.%(ext)s" "${{ inputs.video_url }}"
+          ls -la video.*
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: video
+          path: video.*
+          retention-days: 1
