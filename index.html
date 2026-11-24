@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CargoFeed — Shipping Container Builds, Cargotecture & Reuse</title>
+<meta name="description" content="The live aggregator for shipping container construction: container homes, cargotecture, adaptive reuse, and used container buying guides. Pulling from r/container_homes, r/Cargotecture, r/shippingcontainers, Dezeen, ArchDaily and Inhabitat.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"CargoFeed","url":"https://containers.snarkyalma.com/",
+ "description":"Live aggregator for shipping container construction and reuse.",
+ "about":{"@type":"Thing","name":"shipping container construction"},
+ "isPartOf":{"@type":"Organization","name":"Snarky Alma","url":"https://snarkyalma.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Latest container updates","itemListElement":[{"@type": "ListItem", "position": 1, "name": "Studio Gang completes women's leadership campus in Wisconsin", "url": "https://www.dezeen.com/2026/11/24/studio-gang-wisconsin-womens-leadership-center/"}, {"@type": "ListItem", "position": 2, "name": "Private Residence / naturehumaine architecture", "url": "https://www.archdaily.com/1188855/private-residence-naturehumaine-architecture"}, {"@type": "ListItem", "position": 3, "name": "\"Intensely physical patterns\" cloak Gerhard Richter's self-designed gallery in Doha", "url": "https://www.dezeen.com/2026/11/24/gerhard-richters-doha-pavilion-selldorf-architects/"}, {"@type": "ListItem", "position": 4, "name": "Meet Courage Dzidula Kpodo, Lesley Lokko's pick for the most influential architect of the next 20 years", "url": "https://www.dezeen.com/2026/11/24/courage-dzidula-kpodo-interview-lesley-lokko-20x20/"}, {"@type": "ListItem", "position": 5, "name": "Fenix Art Museum / MAD Architects", "url": "https://www.archdaily.com/1030328/fenix-art-museum-mad-architects"}, {"@type": "ListItem", "position": 6, "name": "Five key projects by Dezeen Awards emerging architect of the year Kuma&Elsa", "url": "https://www.dezeen.com/2026/11/24/kumaelsa-key-projects-dezeen-awards-emerging-architect/"}, {"@type": "ListItem", "position": 7, "name": "Kindergarten Aegelmatt / Brandenberger Kloter", "url": "https://www.archdaily.com/1188642/kindergarten-aegelmatt-brandenberger-kloter"}, {"@type": "ListItem", "position": 8, "name": "London Museum brings \"back a bit of London's heritage\" with Smithfield Market opening", "url": "https://www.dezeen.com/2026/11/24/london-museum-stanton-williams-asif-khan-julian-harrap-architects/"}, {"@type": "ListItem", "position": 9, "name": "Does Your Building Work or Does It Just Photograph Well? What Neuroscience and Use Data Could Teach Architects", "url": "https://www.archdaily.com/1188821/does-your-building-work-or-does-it-just-photograph-well-what-neuroscience-and-use-data-could-teach-architects"}, {"@type": "ListItem", "position": 10, "name": "Grand Terminal Doha / Hassell", "url": "https://www.archdaily.com/1189080/grand-terminal-doha-hassell"}, {"@type": "ListItem", "position": 11, "name": "Four Projects in Thailand and Indonesia Recognized at the Steel Architectural Awards ASEAN 2026", "url": "https://www.archdaily.com/1188505/four-projects-in-thailand-and-indonesia-recognized-at-the-steel-architectural-awards-asean-2026"}, {"@type": "ListItem", "position": 12, "name": "COP31 in Antalya: What the Climate Summit Means for Buildings and Cities", "url": "https://www.archdaily.com/1189123/cop31-in-antalya-what-the-climate-summit-means-for-buildings-and-cities"}, {"@type": "ListItem", "position": 13, "name": "Private House in Kaklebi / Werkraum Design Architecture", "url": "https://www.archdaily.com/1188266/private-house-in-kaklebi"}, {"@type": "ListItem", "position": 14, "name": "The Portuguese Pavilion to Invite Four African Countries Through \"Hands on the Ground\" at the 2027 Venice Architecture Biennale", "url": "https://www.archdaily.com/1189091/the-portuguese-pavilion-to-invite-four-african-countries-through-hands-on-the-ground-at-the-2027-venice-architecture-biennale"}, {"@type": "ListItem", "position": 15, "name": "The Power of the Streets: Why Cities Remain Irreplaceable in the Digital Age", "url": "https://www.archdaily.com/1188636/the-power-of-the-streets-why-cities-remain-irreplaceable-in-the-digital-age"}, {"@type": "ListItem", "position": 16, "name": "HTA Design unveils \"UK's largest council housing development\"", "url": "https://www.dezeen.com/2026/11/23/kidbrooke-park-road-hta-design/"}, {"@type": "ListItem", "position": 17, "name": "Meet AMAA, Neri&Hu’s pick for the most influential architect of the next 20 years", "url": "https://www.dezeen.com/2026/11/23/amaa-interview-dezeen-20x20-nerihu/"}, {"@type": "ListItem", "position": 18, "name": "RIBA president rejoins ARB register to restore architect title", "url": "https://www.dezeen.com/2026/11/23/riba-president-rejoins-arb/"}, {"@type": "ListItem", "position": 19, "name": "Domes depict constellations of missiles in the night sky at Sharjah Architecture Triennial", "url": "https://www.dezeen.com/2026/11/22/after-night-there-is-nothing-sharjah-architecture-triennial/"}, {"@type": "ListItem", "position": 20, "name": "ZHA completes “secular” Théâtre Royal de Rabat in Morocco", "url": "https://www.dezeen.com/2026/11/21/zha-theatre-royal-de-rabat-morroco/"}]}
+</script>
+<style>
+.ad-space { background-color:#f3f4f6; border:2px dashed #9ca3af; display:flex; align-items:center; justify-content:center; color:#6b7280; font-weight:600; text-align:center; flex-direction:column; }
+.img-placeholder { background-color:#e5e7eb; display:flex; align-items:center; justify-content:center; color:#9ca3af; font-size:0.875rem; }
+.theme-bg { background-color:#1e3a8a; }
+.theme-accent { background-color:#ea580c; }
+.theme-accent-hover:hover { background-color:#c2410c; }
+.hidden-extra { display:none; }
+.hidden-extra.filter-show { display:flex; }
+</style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<header class="theme-bg text-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex-shrink-0 flex items-center gap-2">
+<a href="/" class="font-black text-2xl tracking-tighter uppercase">Cargo<span class="text-orange-500">Feed</span></a>
+</div>
+<nav class="hidden md:flex space-x-8 font-semibold">
+<a href="#" class="hover:text-orange-400 transition" data-nav="all">Latest Projects</a>
+<a href="#" class="hover:text-orange-400 transition" data-nav="diy">How-To Guides</a>
+<a href="#" class="hover:text-orange-400 transition" data-nav="forsale">Containers for Sale</a>
+<a href="#" class="hover:text-orange-400 transition" data-nav="all">Communities</a>
+</nav>
+<div class="flex items-center">
+<input id="searchbox" type="text" placeholder="Search feeds..." class="px-3 py-1 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500">
+</div>
+</div>
+</div>
+</header>
+
+<div class="max-w-7xl mx-auto px-4 mt-6">
+<div class="w-full h-24 ad-space">
+<span>Top Horizontal Banner Ad</span>
+<span class="text-xs text-gray-400 mt-1">(Leaderboard: 728 x 90 or 970 x 90)</span>
+</div>
+</div>
+
+<main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+<div class="lg:col-span-3 space-y-6">
+<h1 class="text-3xl font-bold border-b-2 border-orange-500 pb-2 mb-6">Latest Container Updates <span class="text-sm font-normal text-gray-500">(20 stories, refreshed 2026-11-24 18:38 UTC)</span></h1>
+
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="studio gang completes women&#x27;s leadership campus in wisconsin studio gang has completed a women&#x27;s conference centre overlooking geneva lake in wisconsin, with three irregularly shaped buildings informed by the site&#x27;s oak forest. the post studio gang completes women&#x27;s leadership campus in wisconsin… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/womens-leadership-center-williams-bay-wisconsin-studio-gang_dezeen_2364_sq-1-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/24/studio-gang-wisconsin-womens-leadership-center/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Studio Gang completes women&#x27;s leadership campus in Wisconsin</a></h2>
+<p class="text-gray-600 text-sm mb-4">Studio Gang has completed a women&#x27;s conference centre overlooking Geneva Lake in Wisconsin, with three irregularly shaped buildings informed by the site&#x27;s oak forest. The post Studio Gang completes women&#x27;s leadership campus in Wisconsin…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">38 min ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/24/studio-gang-wisconsin-womens-leadership-center/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="private residence / naturehumaine architecture prévert residence is a contemporary reconstruction inspired by a mid-century home, retaining its original footprint and volume as a tribute to its history. built in 1958 in beloeil , just a few hundred metres from the richelieu river, the… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6afd/d88d/eabd/2a00/0193/1db2/newsletter/PreVert_1180_web.jpg?1795020960" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1188855/private-residence-naturehumaine-architecture" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Private Residence / naturehumaine architecture</a></h2>
+<p class="text-gray-600 text-sm mb-4">Prévert Residence is a contemporary reconstruction inspired by a mid-century home, retaining its original footprint and volume as a tribute to its history. Built in 1958 in Beloeil , just a few hundred metres from the Richelieu River, the…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">6 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1188855/private-residence-naturehumaine-architecture" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="&quot;intensely physical patterns&quot; cloak gerhard richter&#x27;s self-designed gallery in doha kaleidoscopic patterns adorn the exterior of this blocky pavilion in doha, qatar, designed by artist gerhard richter with us studio selldorf architects as an art gallery. the post &quot;intensely physical patterns&quot; cloak gerhard richter&#x27;s… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/doha-pavilion-gerhard-richter-selldorf-architects-qatar-architecture-galleries-cultural_dezeen_2364_sq-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/24/gerhard-richters-doha-pavilion-selldorf-architects/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">&quot;Intensely physical patterns&quot; cloak Gerhard Richter&#x27;s self-designed gallery in Doha</a></h2>
+<p class="text-gray-600 text-sm mb-4">Kaleidoscopic patterns adorn the exterior of this blocky pavilion in Doha, Qatar, designed by artist Gerhard Richter with US studio Selldorf Architects as an art gallery. The post &quot;Intensely physical patterns&quot; cloak Gerhard Richter&#x27;s…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">7 hr ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/24/gerhard-richters-doha-pavilion-selldorf-architects/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="meet courage dzidula kpodo, lesley lokko&#x27;s pick for the most influential architect of the next 20 years lesley lokko has nominated courage dzidula kpodo as a key name to watch over the next two decades for dezeen’s 20×20 project. the post meet courage dzidula kpodo, lesley lokko&#x27;s pick for the most influential architect of the next 20 years… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/courage-dzidula-kpodo-interview-dezeen20x20-lesley-lokko_dezeen_2364_sq_20-1-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/24/courage-dzidula-kpodo-interview-lesley-lokko-20x20/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Meet Courage Dzidula Kpodo, Lesley Lokko&#x27;s pick for the most influential architect of the next 20 years</a></h2>
+<p class="text-gray-600 text-sm mb-4">Lesley Lokko has nominated Courage Dzidula Kpodo as a key name to watch over the next two decades for Dezeen’s 20×20 project. The post Meet Courage Dzidula Kpodo, Lesley Lokko&#x27;s pick for the most influential architect of the next 20 years…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">7 hr ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/24/courage-dzidula-kpodo-interview-lesley-lokko-20x20/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="fenix art museum / mad architects fenix is a major new museum that explores migration through the lens of art, opening on a landmark site in rotterdam&#x27;s city harbor, developed by internationally acclaimed architects mad. with a rapidly expanding collection of historic and… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/682c/9a38/82d8/2601/88bc/cacc/newsletter/fenix-art-museum-mad-architects_4.jpg?1747753551" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1030328/fenix-art-museum-mad-architects" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Fenix Art Museum / MAD Architects</a></h2>
+<p class="text-gray-600 text-sm mb-4">Fenix is a major new museum that explores migration through the lens of art, opening on a landmark site in Rotterdam&#x27;s City Harbor, developed by internationally acclaimed architects MAD. With a rapidly expanding collection of historic and…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">7 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1030328/fenix-art-museum-mad-architects" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="five key projects by dezeen awards emerging architect of the year kuma&amp;elsa kuma&amp;elsa was named emerging architect of the year at the dezeen awards. here they select five key projects. the post five key projects by dezeen awards emerging architect of the year kuma&amp;elsa appeared first on dezeen . dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/Shohei-Kuma-and-Elsa-Escobedo_dezeen_2364_col_0-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/24/kumaelsa-key-projects-dezeen-awards-emerging-architect/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Five key projects by Dezeen Awards emerging architect of the year Kuma&amp;Elsa</a></h2>
+<p class="text-gray-600 text-sm mb-4">Kuma&amp;Elsa was named emerging architect of the year at the Dezeen Awards. Here they select five key projects. The post Five key projects by Dezeen Awards emerging architect of the year Kuma&amp;Elsa appeared first on Dezeen .</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">8 hr ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/24/kumaelsa-key-projects-dezeen-awards-emerging-architect/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<div class="w-full h-24 ad-space my-4 feed-item" data-cats="ad">
+<span>In-Feed Horizontal Ad</span>
+<span class="text-xs text-gray-400 mt-1">(Responsive: 100% width)</span>
+</div>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="kindergarten aegelmatt / brandenberger kloter since the start of the 2026 school year, children in pratteln , switzerland, have been learning and playing in a new timber building by brandenberger kloter architekten. kindergarten aegelmatt brings a kindergarten and a day-care centre… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6af7/ce1d/eabd/2a00/0192/f1b0/newsletter/Aegelmatt_01_Aussenansicht_mit_Spielplatz_Foto_Willem_Pab.jpg?1794625080" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1188642/kindergarten-aegelmatt-brandenberger-kloter" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Kindergarten Aegelmatt / Brandenberger Kloter</a></h2>
+<p class="text-gray-600 text-sm mb-4">Since the start of the 2026 school year, children in Pratteln , Switzerland, have been learning and playing in a new timber building by Brandenberger Kloter Architekten. Kindergarten Aegelmatt brings a kindergarten and a day-care centre…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">8 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1188642/kindergarten-aegelmatt-brandenberger-kloter" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="london museum brings &quot;back a bit of london&#x27;s heritage&quot; with smithfield market opening architecture studios stanton williams, asif khan and julian harrap architects have completed their long-awaited transformation of a victorian market hall for the london museum. the post london museum brings &quot;back a bit of london&#x27;s… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/london-museum-stanton-williams-asif-khan-julian-harrap-architects-sq_dezeen_2364_col_2-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/24/london-museum-stanton-williams-asif-khan-julian-harrap-architects/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">London Museum brings &quot;back a bit of London&#x27;s heritage&quot; with Smithfield Market opening</a></h2>
+<p class="text-gray-600 text-sm mb-4">Architecture studios Stanton Williams, Asif Khan and Julian Harrap Architects have completed their long-awaited transformation of a Victorian market hall for the London Museum. The post London Museum brings &quot;back a bit of London&#x27;s…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">8 hr ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/24/london-museum-stanton-williams-asif-khan-julian-harrap-architects/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="does your building work or does it just photograph well? what neuroscience and use data could teach architects architecture reaches people through whatever medium carries it, and each new medium changes our picture of what a good building looks like. for example, when 3d modeling software arrived, the novelty of complex shapes drove the… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6afd/1e98/8074/f464/a9f9/3abe/newsletter/does-your-building-work-or-does-it-just-photograph-well-what-neuroscience-and-user-data-can-teach-architects-about-designing-for-people_6.jpg?1794973352" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1188821/does-your-building-work-or-does-it-just-photograph-well-what-neuroscience-and-use-data-could-teach-architects" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Does Your Building Work or Does It Just Photograph Well? What Neuroscience and Use Data Could Teach Architects</a></h2>
+<p class="text-gray-600 text-sm mb-4">Architecture reaches people through whatever medium carries it, and each new medium changes our picture of what a good building looks like. For example, when 3D modeling software arrived, the novelty of complex shapes drove the…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">11 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1188821/does-your-building-work-or-does-it-just-photograph-well-what-neuroscience-and-use-data-could-teach-architects" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="grand terminal doha / hassell the grand terminal provides berths for two megaships, which can enjoy a variety of leisure and cultural amenities offered by the impressive waterside complex. hassell principal and head of design ashley munday said, &quot;we are really excited… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6b04/5f25/dd54/ea01/8880/eeac/newsletter/grand-terminal-doha-hassell_1.jpg?1795448640" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1189080/grand-terminal-doha-hassell" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Grand Terminal Doha / Hassell</a></h2>
+<p class="text-gray-600 text-sm mb-4">The Grand Terminal provides berths for two megaships, which can enjoy a variety of leisure and cultural amenities offered by the impressive waterside complex. Hassell Principal and Head of Design Ashley Munday said, &quot;We are really excited…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">11 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1189080/grand-terminal-doha-hassell" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="four projects in thailand and indonesia recognized at the steel architectural awards asean 2026 an innovation campus, a corporate headquarters, a family home, and a community development in a remote peatland environment are the four winners of the steel architectural awards asean 2026 . located in thailand and indonesia, the projects… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6af4/a404/8074/f401/89de/e5d4/newsletter/four-projects-in-thailand-and-indonesia-recognized-at-the-steel-architectural-awards-asean-2026_5.jpg?1794417672" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1188505/four-projects-in-thailand-and-indonesia-recognized-at-the-steel-architectural-awards-asean-2026" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Four Projects in Thailand and Indonesia Recognized at the Steel Architectural Awards ASEAN 2026</a></h2>
+<p class="text-gray-600 text-sm mb-4">An innovation campus, a corporate headquarters, a family home, and a community development in a remote peatland environment are the four winners of the Steel Architectural Awards ASEAN 2026 . Located in Thailand and Indonesia, the projects…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">11 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1188505/four-projects-in-thailand-and-indonesia-recognized-at-the-steel-architectural-awards-asean-2026" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition " data-cats="commercial,design" data-search="cop31 in antalya: what the climate summit means for buildings and cities the 31st united nations climate change conference ( cop31 ) concluded on november 22, 2026, in antalya , türkiye , following negotiations that extended beyond the scheduled closing date. hosted by türkiye with australia leading the… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6b05/6490/2bc2/8501/8901/2b94/newsletter/cop31-in-antalya-what-the-climate-summit-means-for-buildings-and-cities_3.jpg?1795515545" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1189123/cop31-in-antalya-what-the-climate-summit-means-for-buildings-and-cities" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">COP31 in Antalya: What the Climate Summit Means for Buildings and Cities</a></h2>
+<p class="text-gray-600 text-sm mb-4">The 31st United Nations Climate Change Conference ( COP31 ) concluded on November 22, 2026, in Antalya , Türkiye , following negotiations that extended beyond the scheduled closing date. Hosted by Türkiye with Australia leading the…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">12 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1189123/cop31-in-antalya-what-the-climate-summit-means-for-buildings-and-cities" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="private house in kaklebi / werkraum design architecture the private house in kaklebi, near tbilisi , is composed of a series of timber-clad volumes rather than a single block, arranged to follow the slope of a wooded site and to preserve its existing mature trees. distributed across multiple… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6af1/8c88/4ba6/4700/01d0/80a0/newsletter/Grigory_Sokolinsky_19.jpg?1794215149" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1188266/private-house-in-kaklebi" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Private House in Kaklebi / Werkraum Design Architecture</a></h2>
+<p class="text-gray-600 text-sm mb-4">The private house in Kaklebi, near Tbilisi , is composed of a series of timber-clad volumes rather than a single block, arranged to follow the slope of a wooded site and to preserve its existing mature trees. Distributed across multiple…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">12 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1188266/private-house-in-kaklebi" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="the portuguese pavilion to invite four african countries through &quot;hands on the ground&quot; at the 2027 venice architecture biennale the portuguese directorate-general for the arts announced on november 16 the curatorial proposal that will represent the country at the 20th international architecture exhibition – la biennale di venezia in 2027 . the selected project was… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6b04/8b52/dd54/ea01/8880/ef9b/newsletter/portugal-pavilion_4.jpg?1795459926" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1189091/the-portuguese-pavilion-to-invite-four-african-countries-through-hands-on-the-ground-at-the-2027-venice-architecture-biennale" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">The Portuguese Pavilion to Invite Four African Countries Through &quot;Hands on the Ground&quot; at the 2027 Venice Architecture Biennale</a></h2>
+<p class="text-gray-600 text-sm mb-4">The Portuguese Directorate-General for the Arts announced on November 16 the curatorial proposal that will represent the country at the 20th International Architecture Exhibition – La Biennale di Venezia in 2027 . The selected project was…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">13 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1189091/the-portuguese-pavilion-to-invite-four-african-countries-through-hands-on-the-ground-at-the-2027-venice-architecture-biennale" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="the power of the streets: why cities remain irreplaceable in the digital age whether in lisbon&#x27;s medieval alleyways , along haussmann&#x27;s boulevards in paris , on the wide avenues of car-oriented chicago , or amid the metropolitan intensity of avenida paulista in são paulo , different urban morphologies seem to give… archdaily">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://images.adsttc.com/media/images/6af7/8b3a/c23f/1f01/895a/fd03/newsletter/the-power-of-the-streets-why-cities-remain-irreplaceable-in-the-digital-age_2.jpg?1794607962" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#1d4ed8">ArchDaily</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.archdaily.com/1188636/the-power-of-the-streets-why-cities-remain-irreplaceable-in-the-digital-age" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">The Power of the Streets: Why Cities Remain Irreplaceable in the Digital Age</a></h2>
+<p class="text-gray-600 text-sm mb-4">Whether in Lisbon&#x27;s medieval alleyways , along Haussmann&#x27;s boulevards in Paris , on the wide avenues of car-oriented Chicago , or amid the metropolitan intensity of Avenida Paulista in São Paulo , different urban morphologies seem to give…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">14 hr ago &bull; via ArchDaily</span>
+<a href="https://www.archdaily.com/1188636/the-power-of-the-streets-why-cities-remain-irreplaceable-in-the-digital-age" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="hta design unveils &quot;uk&#x27;s largest council housing development&quot; a collection of brick-clad buildings containing over 450 homes forms kidbrooke park road in london, which architecture studio hta design claims is the largest council housing development in the uk. the post hta design unveils &quot;uk&#x27;s largest… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/kidbrooke-park-road-hta-design-council-housing_dezeen_2364_sq-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/23/kidbrooke-park-road-hta-design/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">HTA Design unveils &quot;UK&#x27;s largest council housing development&quot;</a></h2>
+<p class="text-gray-600 text-sm mb-4">A collection of brick-clad buildings containing over 450 homes forms Kidbrooke Park Road in London, which architecture studio HTA Design claims is the largest council housing development in the UK. The post HTA Design unveils &quot;UK&#x27;s largest…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">1 day ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/23/kidbrooke-park-road-hta-design/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="meet amaa, neri&amp;hu’s pick for the most influential architect of the next 20 years an innovative approach to reuse defines the output of italian architecture office amaa, which neri&amp;hu for dezeen&#x27;s 20×20 project. the post meet amaa, neri&amp;hu’s pick for the most influential architect of the next 20 years appeared first on… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/amaa-dezeen-20x20-series-2_dezeen_2364_col_6-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/23/amaa-interview-dezeen-20x20-nerihu/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Meet AMAA, Neri&amp;Hu’s pick for the most influential architect of the next 20 years</a></h2>
+<p class="text-gray-600 text-sm mb-4">An innovative approach to reuse defines the output of Italian architecture office AMAA, which Neri&amp;Hu for Dezeen&#x27;s 20×20 project. The post Meet AMAA, Neri&amp;Hu’s pick for the most influential architect of the next 20 years appeared first on…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">1 day ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/23/amaa-interview-dezeen-20x20-nerihu/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="riba president rejoins arb register to restore architect title the president of the royal institute of british architects, chris williamson, has decided to renew his membership with the architects registration board, nearly a year after terminating it. the post riba president rejoins arb register to… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2025/12/chris-williamson-portrait-riba_dezeen_1704_sq-411x411.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/23/riba-president-rejoins-arb/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">RIBA president rejoins ARB register to restore architect title</a></h2>
+<p class="text-gray-600 text-sm mb-4">The president of the Royal Institute of British Architects, Chris Williamson, has decided to renew his membership with the Architects Registration Board, nearly a year after terminating it. The post RIBA president rejoins ARB register to…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">1 day ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/23/riba-president-rejoins-arb/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="domes depict constellations of missiles in the night sky at sharjah architecture triennial architect mohamad nahleh and architecture professor ozayr saloojee created three domed structures at this year&#x27;s sharjah architecture triennial, which reimagine constellations by mapping military objects in the night sky. the post domes… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/after-night-there-is-nothing-sharjah-architecture-triennial-sq_dezeen_2364_col_0-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/22/after-night-there-is-nothing-sharjah-architecture-triennial/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">Domes depict constellations of missiles in the night sky at Sharjah Architecture Triennial</a></h2>
+<p class="text-gray-600 text-sm mb-4">Architect Mohamad Nahleh and architecture professor Ozayr Saloojee created three domed structures at this year&#x27;s Sharjah Architecture Triennial, which reimagine constellations by mapping military objects in the night sky. The post Domes…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">2 days ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/22/after-night-there-is-nothing-sharjah-architecture-triennial/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+<article class="feed-item bg-white rounded-lg shadow-sm overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition hidden-extra" data-cats="commercial,design" data-search="zha completes “secular” théâtre royal de rabat in morocco uk studio zha took visual cues from the riverbank site of this national theatre in morocco when designing its sweeping exterior form, which contains a trio of performance spaces. the post zha completes “secular” théâtre royal de rabat in… dezeen architecture">
+<div class="sm:w-1/3 h-48 sm:h-auto bg-gray-200"><img src="https://static-2026.dezeen.com/uploads/2026/11/theatre-royal-de-rabat-zha-architecture-morocco-cultural_dezeen_2364_sq-1024x1024.jpg" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='&lt;div class=&quot;w-full h-full img-placeholder flex items-center justify-center&quot;&gt;[Image unavailable]&lt;/div&gt;'"></div>
+<div class="p-6 sm:w-2/3 flex flex-col justify-between">
+<div>
+<span class="text-xs font-bold uppercase tracking-wide" style="color:#111827">Dezeen Architecture</span>
+<h2 class="text-xl font-bold mt-1 mb-2 leading-snug"><a href="https://www.dezeen.com/2026/11/21/zha-theatre-royal-de-rabat-morroco/" target="_blank" rel="noopener ugc" class="hover:text-orange-600 transition">ZHA completes “secular” Théâtre Royal de Rabat in Morocco</a></h2>
+<p class="text-gray-600 text-sm mb-4">UK studio ZHA took visual cues from the riverbank site of this national theatre in Morocco when designing its sweeping exterior form, which contains a trio of performance spaces. The post ZHA completes “secular” Théâtre Royal de Rabat in…</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-xs text-gray-500">3 days ago &bull; via Dezeen Architecture</span>
+<a href="https://www.dezeen.com/2026/11/21/zha-theatre-royal-de-rabat-morroco/" target="_blank" rel="noopener ugc" class="theme-accent text-white px-4 py-2 rounded text-sm font-semibold theme-accent-hover transition">Read More</a>
+</div>
+</div>
+</article>
+
+<div class="text-center pt-4" id="loadmore-wrap">
+<button id="loadmore" class="bg-gray-200 text-gray-800 px-6 py-3 rounded font-bold hover:bg-gray-300 transition">Load More Content</button>
+</div>
+<p id="nofeedback" class="hidden text-center text-gray-500 py-6">No stories match that filter.</p>
+</div>
+
+<aside class="space-y-6">
+
+<div class="bg-white p-5 rounded-lg shadow-sm border-t-4 border-blue-800">
+<h3 class="font-bold text-lg mb-3">Filter Feed</h3>
+<ul class="space-y-2 text-sm text-gray-700">
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="residential" checked> Residential Builds</label></li>
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="commercial" checked> Commercial &amp; Retail</label></li>
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="diy" checked> DIY &amp; How-To</label></li>
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="forsale" checked> Containers for Sale</label></li>
+</ul>
+</div>
+
+<div class="bg-white p-5 rounded-lg shadow-sm border-t-4 border-orange-500">
+<h3 class="font-bold text-lg mb-3">Sources</h3>
+<ul class="space-y-1 text-sm text-gray-700">
+<li>r/container_homes</li>
+<li>r/Cargotecture</li>
+<li>r/shippingcontainers</li>
+<li>Dezeen Architecture</li>
+<li>ArchDaily</li>
+<li>Inhabitat</li>
+</ul>
+<p class="text-xs text-gray-400 mt-3">Auto-refresh every 6 hours. Want a source added? <a class="underline" href="mailto:jeffm7007@gmail.com?subject=CargoFeed%20source%20request">Email the desk</a>.</p>
+</div>
+
+<div class="w-full h-96 ad-space">
+<span>Vertical Ad Slot</span>
+<span class="text-xs text-gray-400 mt-1">(Half Page: 300 x 600)</span>
+</div>
+
+<div class="w-full h-64 ad-space">
+<span>Vertical Ad Slot</span>
+<span class="text-xs text-gray-400 mt-1">(Medium Rectangle: 300 x 250)</span>
+</div>
+
+</aside>
+</main>
+
+<div class="max-w-7xl mx-auto px-4 mb-8">
+<div class="w-full h-24 ad-space">
+<span>Bottom Horizontal Banner Ad</span>
+<span class="text-xs text-gray-400 mt-1">(Leaderboard: 728 x 90)</span>
+</div>
+</div>
+
+<footer class="theme-bg text-gray-300 py-8 text-center text-sm">
+<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<p>&copy; 2026 CargoFeed Aggregator. A <a href="https://snarkyalma.com/" class="hover:text-white underline">Snarky Alma</a> project.</p>
+<div class="space-x-4 mt-4 md:mt-0">
+<a href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20CargoFeed" class="hover:text-white transition">Advertise with Us</a>
+<a href="https://snarkyalma.com/" class="hover:text-white transition">About</a>
+</div>
+</div>
+</footer>
+
+<script>
+(function () {
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".filter-cb"));
+  var extra = Array.prototype.slice.call(document.querySelectorAll(".hidden-extra"));
+  var search = document.getElementById("searchbox");
+  var nav = Array.prototype.slice.call(document.querySelectorAll("[data-nav]"));
+
+  function apply() {
+    var on = {};
+    boxes.forEach(function (b) { on[b.dataset.cat] = b.checked; });
+    var q = (search.value || "").toLowerCase().trim();
+    var visible = 0;
+    document.querySelectorAll(".feed-item").forEach(function (el) {
+      var cats = (el.dataset.cats || "").split(",");
+      var catOk = cats.indexOf("ad") >= 0 || cats.some(function (c) { return on[c]; });
+      var qOk = !q || (el.dataset.search || "").indexOf(q) >= 0;
+      var show = catOk && qOk;
+      el.style.display = show ? "" : "none";
+      if (show && cats.indexOf("ad") < 0) visible++;
+    });
+    document.getElementById("nofeedback").classList.toggle("hidden", visible > 0);
+  }
+
+  boxes.forEach(function (b) { b.addEventListener("change", apply); });
+  search.addEventListener("input", apply);
+
+  nav.forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      var want = a.dataset.nav;
+      boxes.forEach(function (b) {
+        b.checked = want === "all" ? true : b.dataset.cat === want;
+      });
+      apply();
+      window.scrollTo({ top: 300, behavior: "smooth" });
+    });
+  });
+
+  document.getElementById("loadmore").addEventListener("click", function () {
+    extra.forEach(function (el) { el.classList.remove("hidden-extra"); el.classList.add("filter-show"); });
+    document.getElementById("loadmore-wrap").style.display = "none";
+    apply();
+  });
+})();
+</script>
+
+</body>
+</html>

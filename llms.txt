@@ -1,0 +1,25 @@
+# CargoFeed
+
+> Live aggregator for shipping container construction — container homes, cargotecture, adaptive reuse, and used-container buying. Refreshed automatically every 6 hours from Reddit communities and architecture publications.
+
+## Sources
+- r/container_homes (Reddit) — residential container builds, progress photos, troubleshooting
+- r/Cargotecture (Reddit) — residential + commercial cargo architecture
+- r/shippingcontainers (Reddit) — buying used containers, storage conversions, reuse
+- Dezeen Architecture — international container restaurants, hotels, shelters, homes
+- ArchDaily — modular and shipping container case studies
+- Inhabitat — sustainable design, eco upcycling, off-grid builds
+
+## Adding a source
+Edit `feeds.txt` — one line per feed:
+`Feed Name|https://example.com/feed.xml|residential,commercial,diy,forsale,design|#badgecolor`
+Commit and push; the next cron run picks it up.
+
+### Optional: Google Alerts keyword feed
+1. Go to google.com/alerts while logged into any Google account.
+2. Query: "shipping container" AND ("repurposed" OR "upcycled" OR "cargotecture" OR "container home" OR "adaptive reuse")
+3. Show options → Deliver to → RSS feed → Create Alert.
+4. Copy the feed URL it gives you and add it to `feeds.txt` as a new line.
+
+## About
+CargoFeed is a [Snarky Alma](https://snarkyalma.com/) project — AI tooling for the built world.

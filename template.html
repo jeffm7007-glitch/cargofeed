@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CargoFeed — Shipping Container Builds, Cargotecture & Reuse</title>
+<meta name="description" content="The live aggregator for shipping container construction: container homes, cargotecture, adaptive reuse, and used container buying guides. Pulling from r/container_homes, r/Cargotecture, r/shippingcontainers, Dezeen, ArchDaily and Inhabitat.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"CargoFeed","url":"https://containers.snarkyalma.com/",
+ "description":"Live aggregator for shipping container construction and reuse.",
+ "about":{"@type":"Thing","name":"shipping container construction"},
+ "isPartOf":{"@type":"Organization","name":"Snarky Alma","url":"https://snarkyalma.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Latest container updates","itemListElement":<!--JSONLD_ITEMS-->}
+</script>
+<style>
+.ad-space { background-color:#f3f4f6; border:2px dashed #9ca3af; display:flex; align-items:center; justify-content:center; color:#6b7280; font-weight:600; text-align:center; flex-direction:column; }
+.img-placeholder { background-color:#e5e7eb; display:flex; align-items:center; justify-content:center; color:#9ca3af; font-size:0.875rem; }
+.theme-bg { background-color:#1e3a8a; }
+.theme-accent { background-color:#ea580c; }
+.theme-accent-hover:hover { background-color:#c2410c; }
+.hidden-extra { display:none; }
+.hidden-extra.filter-show { display:flex; }
+</style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<header class="theme-bg text-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex-shrink-0 flex items-center gap-2">
+<a href="/" class="font-black text-2xl tracking-tighter uppercase">Cargo<span class="text-orange-500">Feed</span></a>
+</div>
+<nav class="hidden md:flex space-x-8 font-semibold">
+<a href="#" class="hover:text-orange-400 transition" data-nav="all">Latest Projects</a>
+<a href="#" class="hover:text-orange-400 transition" data-nav="diy">How-To Guides</a>
+<a href="#" class="hover:text-orange-400 transition" data-nav="forsale">Containers for Sale</a>
+<a href="#" class="hover:text-orange-400 transition" data-nav="all">Communities</a>
+</nav>
+<div class="flex items-center">
+<input id="searchbox" type="text" placeholder="Search feeds..." class="px-3 py-1 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500">
+</div>
+</div>
+</div>
+</header>
+
+<div class="max-w-7xl mx-auto px-4 mt-6">
+<div class="w-full h-24 ad-space">
+<span>Top Horizontal Banner Ad</span>
+<span class="text-xs text-gray-400 mt-1">(Leaderboard: 728 x 90 or 970 x 90)</span>
+</div>
+</div>
+
+<main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+<div class="lg:col-span-3 space-y-6">
+<h1 class="text-3xl font-bold border-b-2 border-orange-500 pb-2 mb-6">Latest Container Updates <span class="text-sm font-normal text-gray-500">(<!--ITEM_COUNT--> stories, refreshed <!--UPDATED-->)</span></h1>
+
+<!--FEED_ITEMS-->
+
+<div class="text-center pt-4" id="loadmore-wrap">
+<button id="loadmore" class="bg-gray-200 text-gray-800 px-6 py-3 rounded font-bold hover:bg-gray-300 transition">Load More Content</button>
+</div>
+<p id="nofeedback" class="hidden text-center text-gray-500 py-6">No stories match that filter.</p>
+</div>
+
+<aside class="space-y-6">
+
+<div class="bg-white p-5 rounded-lg shadow-sm border-t-4 border-blue-800">
+<h3 class="font-bold text-lg mb-3">Filter Feed</h3>
+<ul class="space-y-2 text-sm text-gray-700">
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="residential" checked> Residential Builds</label></li>
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="commercial" checked> Commercial &amp; Retail</label></li>
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="diy" checked> DIY &amp; How-To</label></li>
+<li><label class="flex items-center"><input type="checkbox" class="mr-2 rounded text-orange-500 filter-cb" data-cat="forsale" checked> Containers for Sale</label></li>
+</ul>
+</div>
+
+<div class="bg-white p-5 rounded-lg shadow-sm border-t-4 border-orange-500">
+<h3 class="font-bold text-lg mb-3">Sources</h3>
+<ul class="space-y-1 text-sm text-gray-700">
+<li>r/container_homes</li>
+<li>r/Cargotecture</li>
+<li>r/shippingcontainers</li>
+<li>Dezeen Architecture</li>
+<li>ArchDaily</li>
+<li>Inhabitat</li>
+</ul>
+<p class="text-xs text-gray-400 mt-3">Auto-refresh every 6 hours. Want a source added? <a class="underline" href="mailto:jeffm7007@gmail.com?subject=CargoFeed%20source%20request">Email the desk</a>.</p>
+</div>
+
+<div class="w-full h-96 ad-space">
+<span>Vertical Ad Slot</span>
+<span class="text-xs text-gray-400 mt-1">(Half Page: 300 x 600)</span>
+</div>
+
+<div class="w-full h-64 ad-space">
+<span>Vertical Ad Slot</span>
+<span class="text-xs text-gray-400 mt-1">(Medium Rectangle: 300 x 250)</span>
+</div>
+
+</aside>
+</main>
+
+<div class="max-w-7xl mx-auto px-4 mb-8">
+<div class="w-full h-24 ad-space">
+<span>Bottom Horizontal Banner Ad</span>
+<span class="text-xs text-gray-400 mt-1">(Leaderboard: 728 x 90)</span>
+</div>
+</div>
+
+<footer class="theme-bg text-gray-300 py-8 text-center text-sm">
+<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<p>&copy; 2026 CargoFeed Aggregator. A <a href="https://snarkyalma.com/" class="hover:text-white underline">Snarky Alma</a> project.</p>
+<div class="space-x-4 mt-4 md:mt-0">
+<a href="mailto:jeffm7007@gmail.com?subject=Advertise%20on%20CargoFeed" class="hover:text-white transition">Advertise with Us</a>
+<a href="https://snarkyalma.com/" class="hover:text-white transition">About</a>
+</div>
+</div>
+</footer>
+
+<script>
+(function () {
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".filter-cb"));
+  var extra = Array.prototype.slice.call(document.querySelectorAll(".hidden-extra"));
+  var search = document.getElementById("searchbox");
+  var nav = Array.prototype.slice.call(document.querySelectorAll("[data-nav]"));
+
+  function apply() {
+    var on = {};
+    boxes.forEach(function (b) { on[b.dataset.cat] = b.checked; });
+    var q = (search.value || "").toLowerCase().trim();
+    var visible = 0;
+    document.querySelectorAll(".feed-item").forEach(function (el) {
+      var cats = (el.dataset.cats || "").split(",");
+      var catOk = cats.indexOf("ad") >= 0 || cats.some(function (c) { return on[c]; });
+      var qOk = !q || (el.dataset.search || "").indexOf(q) >= 0;
+      var show = catOk && qOk;
+      el.style.display = show ? "" : "none";
+      if (show && cats.indexOf("ad") < 0) visible++;
+    });
+    document.getElementById("nofeedback").classList.toggle("hidden", visible > 0);
+  }
+
+  boxes.forEach(function (b) { b.addEventListener("change", apply); });
+  search.addEventListener("input", apply);
+
+  nav.forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      var want = a.dataset.nav;
+      boxes.forEach(function (b) {
+        b.checked = want === "all" ? true : b.dataset.cat === want;
+      });
+      apply();
+      window.scrollTo({ top: 300, behavior: "smooth" });
+    });
+  });
+
+  document.getElementById("loadmore").addEventListener("click", function () {
+    extra.forEach(function (el) { el.classList.remove("hidden-extra"); el.classList.add("filter-show"); });
+    document.getElementById("loadmore-wrap").style.display = "none";
+    apply();
+  });
+})();
+</script>
+
+</body>
+</html>

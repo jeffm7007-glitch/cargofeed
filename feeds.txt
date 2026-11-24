@@ -1,0 +1,10 @@
+# CargoFeed source registry — one line per feed:
+# name|url|comma-separated-categories|badge-color
+# Categories: residential, commercial, diy, forsale, design
+# To add a source (e.g. a Google Alerts RSS URL), paste one line and push. The cron does the rest.
+r/container_homes|https://www.reddit.com/r/container_homes/.rss|residential,diy|#ea580c
+r/Cargotecture|https://www.reddit.com/r/Cargotecture/.rss|commercial,design,diy|#2563eb
+r/shippingcontainers|https://www.reddit.com/r/shippingcontainers/.rss|forsale,diy|#16a34a
+Dezeen Architecture|https://www.dezeen.com/architecture/feed/|commercial,design|#111827
+ArchDaily|https://www.archdaily.com/.xml|commercial,design|#1d4ed8
+Inhabitat|https://inhabitat.com/feed/|residential,diy,design|#059669
