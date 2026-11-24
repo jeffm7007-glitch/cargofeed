@@ -35,17 +35,19 @@ def link_of(item):
     return ""
 
 def media_of(item):
+    thumb = ""
     for child in item.iter():
         ln = localname(child.tag)
-        if ln in ("thumbnail", "content") and child.attrib.get("url"):
-            u = child.attrib["url"]
-            if u.startswith("http"):
+        if ln == "thumbnail" and child.attrib.get("url", "").startswith("http"):
+            thumb = child.attrib["url"]
+            break
+        if ln in ("content", "enclosure"):
+            u = child.attrib.get("url", "")
+            t = child.attrib.get("type", "")
+            m = child.attrib.get("medium", "")
+            if u.startswith("http") and (t.startswith("image") or m == "image"):
                 return u
-        if ln == "enclosure" and child.attrib.get("url"):
-            u = child.attrib["url"]
-            if u.startswith("http") and "image" in child.attrib.get("type", "image"):
-                return u
-    return ""
+    return thumb
 
 TAG_RE = re.compile(r"<[^>]+>")
 

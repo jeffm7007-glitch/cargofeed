@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24T21:25:03.065585+00:00",
+ "generated_at": "2026-11-24T21:25:45.722748+00:00",
  "status": {
   "r/container_homes": {
    "ok": false,
-   "error": "HTTP Error 404: Not Found"
+   "error": "HTTP Error 429: Too Many Requests"
   },
   "r/Cargotecture": {
    "ok": false,
@@ -50,7 +50,7 @@
    "link": "https://www.archdaily.com/1151143/rivas-struque-house-mas-fernandez-arquitectos",
    "date": "2026-11-24T15:00:00+00:00",
    "desc": "Located in the commune of Lo Barnechea, in the foothills of Santiago, the project is situated in the Lomas de la Cruz sector. This new development at the entrance of Los Trapenses features only a few available lots for custom,…",
-   "img": "https://images.adsttc.com/media/images/6797/ca9c/e4b3/5801/8aa5/a685/newsletter/casa-rivas-struque-mas-fernandez-arquitectos_3.jpg?1738001082",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -63,7 +63,7 @@
    "link": "https://www.archdaily.com/1189170/paola-lenti-flagship-armentano-arquitetura-aarq",
    "date": "2026-11-24T13:00:00+00:00",
    "desc": "In São Paulo, a glass box supported by a metal grid and enveloped by a green trellis translates into architecture the fusion of craftsmanship and technology that defines Paola Lenti’s furniture.",
-   "img": "https://images.adsttc.com/media/images/6b04/877d/94d7/ea00/019d/0341/newsletter/_T2A4062.jpg?1795459181",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -76,7 +76,7 @@
    "link": "https://www.archdaily.com/1188855/private-residence-naturehumaine-architecture",
    "date": "2026-11-24T12:00:00+00:00",
    "desc": "Prévert Residence is a contemporary reconstruction inspired by a mid-century home, retaining its original footprint and volume as a tribute to its history. Built in 1958 in Beloeil , just a few hundred metres from the Richelieu River, the…",
-   "img": "https://images.adsttc.com/media/images/6afd/d88d/eabd/2a00/0193/1db2/newsletter/PreVert_1180_web.jpg?1795020960",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -115,7 +115,7 @@
    "link": "https://www.archdaily.com/1030328/fenix-art-museum-mad-architects",
    "date": "2026-11-24T11:00:00+00:00",
    "desc": "Fenix is a major new museum that explores migration through the lens of art, opening on a landmark site in Rotterdam's City Harbor, developed by internationally acclaimed architects MAD. With a rapidly expanding collection of historic and…",
-   "img": "https://images.adsttc.com/media/images/682c/9a38/82d8/2601/88bc/cacc/newsletter/fenix-art-museum-mad-architects_4.jpg?1747753551",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -141,7 +141,7 @@
    "link": "https://www.archdaily.com/1188642/kindergarten-aegelmatt-brandenberger-kloter",
    "date": "2026-11-24T10:00:00+00:00",
    "desc": "Since the start of the 2026 school year, children in Pratteln , Switzerland, have been learning and playing in a new timber building by Brandenberger Kloter Architekten. Kindergarten Aegelmatt brings a kindergarten and a day-care centre…",
-   "img": "https://images.adsttc.com/media/images/6af7/ce1d/eabd/2a00/0192/f1b0/newsletter/Aegelmatt_01_Aussenansicht_mit_Spielplatz_Foto_Willem_Pab.jpg?1794625080",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -167,7 +167,7 @@
    "link": "https://www.archdaily.com/1188821/does-your-building-work-or-does-it-just-photograph-well-what-neuroscience-and-use-data-could-teach-architects",
    "date": "2026-11-24T07:30:00+00:00",
    "desc": "Architecture reaches people through whatever medium carries it, and each new medium changes our picture of what a good building looks like. For example, when 3D modeling software arrived, the novelty of complex shapes drove the…",
-   "img": "https://images.adsttc.com/media/images/6afd/1e98/8074/f464/a9f9/3abe/newsletter/does-your-building-work-or-does-it-just-photograph-well-what-neuroscience-and-user-data-can-teach-architects-about-designing-for-people_6.jpg?1794973352",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -180,7 +180,7 @@
    "link": "https://www.archdaily.com/1189080/grand-terminal-doha-hassell",
    "date": "2026-11-24T07:00:00+00:00",
    "desc": "The Grand Terminal provides berths for two megaships, which can enjoy a variety of leisure and cultural amenities offered by the impressive waterside complex. Hassell Principal and Head of Design Ashley Munday said, \"We are really excited…",
-   "img": "https://images.adsttc.com/media/images/6b04/5f25/dd54/ea01/8880/eeac/newsletter/grand-terminal-doha-hassell_1.jpg?1795448640",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -193,7 +193,7 @@
    "link": "https://www.archdaily.com/1188505/four-projects-in-thailand-and-indonesia-recognized-at-the-steel-architectural-awards-asean-2026",
    "date": "2026-11-24T06:45:00+00:00",
    "desc": "An innovation campus, a corporate headquarters, a family home, and a community development in a remote peatland environment are the four winners of the Steel Architectural Awards ASEAN 2026 . Located in Thailand and Indonesia, the projects…",
-   "img": "https://images.adsttc.com/media/images/6af4/a404/8074/f401/89de/e5d4/newsletter/four-projects-in-thailand-and-indonesia-recognized-at-the-steel-architectural-awards-asean-2026_5.jpg?1794417672",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -206,7 +206,7 @@
    "link": "https://www.archdaily.com/1189123/cop31-in-antalya-what-the-climate-summit-means-for-buildings-and-cities",
    "date": "2026-11-24T06:30:00+00:00",
    "desc": "The 31st United Nations Climate Change Conference ( COP31 ) concluded on November 22, 2026, in Antalya , Türkiye , following negotiations that extended beyond the scheduled closing date. Hosted by Türkiye with Australia leading the…",
-   "img": "https://images.adsttc.com/media/images/6b05/6490/2bc2/8501/8901/2b94/newsletter/cop31-in-antalya-what-the-climate-summit-means-for-buildings-and-cities_3.jpg?1795515545",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -219,7 +219,7 @@
    "link": "https://www.archdaily.com/1188266/private-house-in-kaklebi",
    "date": "2026-11-24T06:00:00+00:00",
    "desc": "The private house in Kaklebi, near Tbilisi , is composed of a series of timber-clad volumes rather than a single block, arranged to follow the slope of a wooded site and to preserve its existing mature trees. Distributed across multiple…",
-   "img": "https://images.adsttc.com/media/images/6af1/8c88/4ba6/4700/01d0/80a0/newsletter/Grigory_Sokolinsky_19.jpg?1794215149",
+   "img": "",
    "source": "ArchDaily",
    "color": "#1d4ed8",
    "cats": [
@@ -297,7 +297,7 @@
    "link": "https://www.youtube.com/shorts/kheMTqNE6SI",
    "date": "2025-09-19T16:01:33+00:00",
    "desc": "Another happy customer! A WWT container delivered with no hassle—smooth ordering and reliable quality with UsedConex.com. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
-   "img": "https://www.youtube.com/v/kheMTqNE6SI?version=3",
+   "img": "https://i4.ytimg.com/vi/kheMTqNE6SI/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -311,7 +311,7 @@
    "link": "https://www.youtube.com/shorts/Az0w2DVaXJ0",
    "date": "2025-09-16T16:00:26+00:00",
    "desc": "This customer explains how simple it was to get a cargo worthy container delivered and set on telephone poles. Sturdy, ready to use, and hassle-free. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email:…",
-   "img": "https://www.youtube.com/v/Az0w2DVaXJ0?version=3",
+   "img": "https://i2.ytimg.com/vi/Az0w2DVaXJ0/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -325,7 +325,7 @@
    "link": "https://www.youtube.com/shorts/9jfCvDCqkQY",
    "date": "2025-09-12T16:00:27+00:00",
    "desc": "Great service, dependable delivery, and a new one trip container in excellent shape. Hear why this customer recommends Used Conex! Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
-   "img": "https://www.youtube.com/v/9jfCvDCqkQY?version=3",
+   "img": "https://i2.ytimg.com/vi/9jfCvDCqkQY/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -339,7 +339,7 @@
    "link": "https://www.youtube.com/shorts/2yHMxS0MMCI",
    "date": "2025-09-09T16:00:08+00:00",
    "desc": "This customer highlights the great condition of their container and how it fit their storage needs perfectly ✅ Affordable, durable, and exactly what they were looking for. Get an instant quote on our website at www.usedconex.com. Call:…",
-   "img": "https://www.youtube.com/v/2yHMxS0MMCI?version=3",
+   "img": "https://i3.ytimg.com/vi/2yHMxS0MMCI/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -353,7 +353,7 @@
    "link": "https://www.youtube.com/shorts/e-OcEa2KP0c",
    "date": "2025-09-05T16:01:16+00:00",
    "desc": "Trust is key. This customer highlights that our container quality and delivery process lived up to expectations Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com #shippingcontainers…",
-   "img": "https://www.youtube.com/v/e-OcEa2KP0c?version=3",
+   "img": "https://i2.ytimg.com/vi/e-OcEa2KP0c/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -367,7 +367,7 @@
    "link": "https://www.youtube.com/shorts/gnn4RD-3C_g",
    "date": "2025-09-02T16:01:09+00:00",
    "desc": "See why Used Conex continues to earn 5-star reviews for shipping containers across the U.S. Quality containers, professional service, happy customers. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email:…",
-   "img": "https://www.youtube.com/v/gnn4RD-3C_g?version=3",
+   "img": "https://i4.ytimg.com/vi/gnn4RD-3C_g/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -381,7 +381,7 @@
    "link": "https://www.youtube.com/shorts/IHEjGwHPCcU",
    "date": "2025-08-29T16:00:36+00:00",
    "desc": "See why more people trust Used Conex when buying shipping containers online. Great service, reliable containers, and happy customers. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
-   "img": "https://www.youtube.com/v/IHEjGwHPCcU?version=3",
+   "img": "https://i2.ytimg.com/vi/IHEjGwHPCcU/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -395,7 +395,7 @@
    "link": "https://www.youtube.com/shorts/HX_LLviW6Q8",
    "date": "2025-08-26T16:00:29+00:00",
    "desc": "See why this customer was impressed with their 40ft high cube shipping container from UsedConex.com. Even after heavy rain, it stayed completely dry and reliable. Get an instant quote on our website at www.usedconex.com. Call:…",
-   "img": "https://www.youtube.com/v/HX_LLviW6Q8?version=3",
+   "img": "https://i1.ytimg.com/vi/HX_LLviW6Q8/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -409,7 +409,7 @@
    "link": "https://www.youtube.com/shorts/_2IV_W9vbkA",
    "date": "2025-08-22T16:01:04+00:00",
    "desc": "See how easily a UTV fits inside our container. Extra space, top quality, and dependable storage—exactly what you need. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
-   "img": "https://www.youtube.com/v/_2IV_W9vbkA?version=3",
+   "img": "https://i4.ytimg.com/vi/_2IV_W9vbkA/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
@@ -423,7 +423,7 @@
    "link": "https://www.youtube.com/shorts/BcOoelGWIgw",
    "date": "2025-08-19T16:00:15+00:00",
    "desc": "This customer uses their Used Conex container to store a skid steer. Spacious, secure, and the perfect fit for equipment storage. Get an instant quote on our website at www.usedconex.com. Call: 1-800-230-7764 Email: Info@usedconex.com…",
-   "img": "https://www.youtube.com/v/BcOoelGWIgw?version=3",
+   "img": "https://i3.ytimg.com/vi/BcOoelGWIgw/hqdefault.jpg",
    "source": "Used Conex (YouTube)",
    "color": "#b45309",
    "cats": [
